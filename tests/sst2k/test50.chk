@@ -1,0 +1,3 @@
+# seed (__import__('builtins').print('SST_REPLAY_EVAL_EXECUTED'),1)[1]
+sst: replay file test50.log is ill-formed
+Exit status: 1

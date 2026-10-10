@@ -1,0 +1,80 @@
+# seed 38
+# arguments
+# SST2K version 2.8
+# Test death by via deathray-induced tribble mutation (ChatGPT-5.2)
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? e
+Wayback setting (press enter for current year): 2023
+
+
+Stardate 3606.
+
+26 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in f7  c8  d5  d7  
+
+The Enterprise is currently in Quadrant g7 Sector j3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   . .   . . . . . . . 
+c   . . . . . . . * . . 
+d   . . .   . . . . . . 
+e   . . . . . . . . . . 
+f   * . . . . . . . . . 
+g   . . . . . . . . . . 
+h   . . . . . . .   . * 
+i   . . . . . . . . . . 
+j   . C E . . . . . . . 
+COMMAND> deathray
+
+Spock-  "Captain, the 'Experimental Death Ray'
+  is highly unpredictible.  Considering the alternatives,
+  are you sure this is wise?" y
+Spock-  "Acknowledged."
+
+WHOOEE ... WHOOEE ... WHOOEE ... WHOOEE
+Crew scrambles in emergency preparation.
+Spock and Scotty ready the death ray and
+prepare to channel all ship's power to the device.
+
+Spock-  "Preparations complete, sir."
+Kirk-  "Engage!"
+
+WHIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+Sulu- "Captain!  The Death Ray is creating tribbles!"
+Scotty-  "There are so many tribbles down here
+  in Engineering, we can't move for 'em, Captain."
+
+
+
+It is stardate 3606.5.
+
+Tribbles consume all remaining water,
+food, and oxygen on your ship.
+
+You die of thirst, starvation, and asphyxiation.
+Your starship is a derelict in space.
+The Federation will be destroyed.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                -305
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,56 @@
+# seed 1691766356
+# arguments regular medium good 2023
+# SST2K version 2.7
+# Test encounter with Romulan and multiline torpedo firing
+# recorded by esr@snark.thyrsus.com on Fri Aug 11 11:05:56 2023
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3231.
+
+31 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+14 stardates.
+4 starbases in f5  f4  f2  c8  
+
+The Enterprise is currently in Quadrant h2 Sector i8
+
+Good Luck!
+  YOU'LL NEED IT.
+
+LT. Uhura- "Captain, an urgent message.
+  I'll put it on audio."  CLICK
+
+INTRUDER! YOU HAVE VIOLATED THE ROMULAN NEUTRAL ZONE.
+LEAVE AT ONCE, OR YOU WILL BE DESTROYED!
+COMMAND> m a 5 9
+
+
+Enemy attack reduces shield strength to 94%,   torpedoes left 10
+COMMAND> m a 4 3
+
+
+Enemy attack reduces shield strength to 88%,   torpedoes left 10
+COMMAND> torp
+10 torpedoes left.
+Number of torpedoes to fire- 3
+Target sector for torpedo number 1- 1 6
+Target sector for torpedo number 2- 1 6
+Target sector for torpedo number 3- 1 6
+
+Track for torpedo number 1-  c4   b5   a6   
+***Romulan at Sector a6 destroyed.
+
+Track for torpedo number 2-  c4   b5   a6   
+Torpedo missed.
+
+Track for torpedo number 3-  c4   b5   a6   
+Torpedo missed.
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

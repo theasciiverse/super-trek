@@ -1,0 +1,79 @@
+# seed 1770008435
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests manual phasers preserve target slots when sensors cannot locate a Supercommander.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2117.
+
+19 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+3 starbases in a4  h3  a8  
+
+The Enterprise is currently in Quadrant g2 Sector b10
+
+Good Luck!
+  YOU'LL NEED IT.
+
+Mr. Spock- "Captain, this is most unusual.
+    Please examine your short-range scan."
+COMMAND> shields down
+Shields lowered.
+*** Super-commander from Sector h2 advances to Sector e5.
+
+482 unit hit from Super-commander at e5
+
+***CRITICAL HIT--S. R. Sensors damaged.
+68 unit hit on the Enterprise
+57 unit hit on the Enterprise
+
+Energy left 4391    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 3 casualties
+   in that last attack."
+COMMAND> damages
+DEVICE                             REPAIR TIMES
+                                   IN FLIGHT                DOCKED
+  S. R. Sensors             	    7.53		    1.87
+COMMAND> phasers manual
+
+Energy available= 4391.56
+Super-commander can't be located without short range scan.
+(0)  units to fire at Stranger at Sector g4-  0
+(0)  units to fire at Klingon at Sector d2-  500
+(0)  units to fire at Klingon at Sector j3-  1
+
+420 unit hit on Klingon at Sector d2
+***Klingon at Sector d2 destroyed.
+0 unit hit on Klingon at Sector j3
+
+***TORPEDO INCOMING  
+
+Torpedo track- c7   c8   b9   
+b10   
+Torpedo hits Enterprise.
+Enterprise displaced by blast to Sector a1 
+75 unit hit on the Enterprise
+
+Energy left 3815    shields down 100%,   torpedoes left 10
+COMMAND> status
+Stardate      2117.8, Time Left 7.23
+Condition     RED, 1 DAMAGES
+Position      g2 , a1
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        3815.02
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 18
+Sector is uninhabited
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

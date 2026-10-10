@@ -1,0 +1,56 @@
+# seed 3
+# arguments
+# SST2K version 2.8
+# Test death via torpedo-induced supernova (ChatGPT-5.2)
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? n
+Wayback setting (press enter for current year): 2023
+
+
+It is stardate 4521. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 3 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 3 supporting starbases.
+Starbase locations-  g3  h3  f4  
+
+The Enterprise is currently in Quadrant d5 Sector f1
+
+Good Luck!
+COMMAND> torpedo 1 1 3
+
+Torpedo track- e1   
+
+***RED ALERT!  RED ALERT!
+***Incipient supernova detected at Sector e1
+Emergency override attempts t***************
+******************************************************
+
+
+
+It is stardate 4521.4.
+
+The Enterprise has been fried by a supernova.
+...Not even cinders remain...
+The Federation will be destroyed.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+     3 stars destroyed by your action       -15
+     1 planets destroyed by your action     -10
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                -324
+
+May the Great Bird of the Galaxy roost upon your home planet.

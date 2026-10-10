@@ -1,0 +1,75 @@
+# seed 1771784331
+# arguments r s n 2026
+# SST2K version 2.8
+# Test mining on planet with dilithium.
+# recorded by esr@snark.thyrsus.com on Sun Feb 22 13:18:51 2026
+#
+
+
+-SUPER- STAR TREK
+
+
+
+It is stardate 3123. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 3 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 3 supporting starbases.
+Starbase locations-  f1  c2  a1  
+
+The Enterprise is currently in Quadrant g6 Sector g7
+
+Good Luck!
+COMMAND> shuttle
+
+Enterprise not in standard orbit.
+COMMAND> orbit
+
+Helmsman Sulu-  "Entering standard orbit, Sir."
+Sulu-  "Entered orbit at altitude 6391.41 kilometers."
+COMMAND> shuttle
+
+Spock-  "Captain, we have no information on this planet
+  and Starfleet Regulations clearly state that in this situation
+  you may not fly down."
+COMMAND> mine
+
+Mining party not on planet.
+COMMAND> shuttle
+
+Spock-  "Captain, we have no information on this planet
+  and Starfleet Regulations clearly state that in this situation
+  you may not fly down."
+COMMAND> orbit
+
+Already in standard orbit.
+COMMAND> m a d10
+
+Helmsman Sulu- "Leaving standard orbit."
+COMMAND> m a g8 1 1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant g8.
+COMMAND> m a d7 j10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant d7.
+COMMAND> m a a1
+
+
+Enterprise blocked by object at f6;
+Emergency stop required 125 units of energy.
+Collision detected
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 3125.51
+     Supernova in Quadrant c8; caution advised.
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

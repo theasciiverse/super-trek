@@ -1,0 +1,12 @@
+# seed 1692177676
+# arguments regular medium novice 2023
+# SST2K version 2.9
+# Tests MAYDAY selects a remote base after the local base is destroyed.
+#
+m a c0
+m a c9
+torpedo 1 c 2
+torpedo 1 f10
+mayday
+status
+quit

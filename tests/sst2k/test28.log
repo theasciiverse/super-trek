@@ -1,0 +1,11 @@
+# seed 14
+# arguments
+# SST2K version 2.8
+# Test death via block-hole collision (ChatGPT-5.2)
+#
+r
+s
+n
+2023
+move manual 0.3 0.0
+quit

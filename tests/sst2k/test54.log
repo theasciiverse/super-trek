@@ -1,0 +1,10 @@
+# seed 1770000462
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests negative enemy power does not guarantee surrender.
+#
+phasers manual 150
+capture
+report
+srscan
+quit

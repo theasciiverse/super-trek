@@ -1,0 +1,14 @@
+# seed 1
+# Tests all REQUEST item prefixes, live counts, sandbox time, and screen-mode suppression.
+#
+date d Stardate|2456.7
+condition c Condition|GREEN, 0 DAMAGES
+position p Position|b3 , e6
+lsupport l Life Support|ACTIVE
+warpfactor w Warp Factor|6.5
+energy e Energy|1234.50
+torpedoes t Torpedoes|7
+shields s Shields|UP, 50% 1250.0 units
+klingons k Klingons Left|7
+time ti Time Left|4.25
+bases ba Bases Left|3

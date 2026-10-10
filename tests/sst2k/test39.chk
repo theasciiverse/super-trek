@@ -1,0 +1,271 @@
+# seed 1771788610
+# arguments regular short novice 2026
+# SST2K version 2.9
+# Tests victory when the death ray destroys the last Klingon.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+It is stardate 3930. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 5 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 4 supporting starbases.
+Starbase locations-  a7  c7  e1  a5  
+
+The Enterprise is currently in Quadrant g8 Sector f7
+
+Good Luck!
+COMMAND> probe
+4 probes left
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- a8
+
+Ensign Chekov-  "The deep space probe is launched, Captain."
+COMMAND> m a g5 a10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant g5.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant f8."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e8."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant d8."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant c8."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b8."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a8."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "The deep space probe has left the galaxy."
+COMMAND> m a j10
+
+COMMAND> m a g2 j10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant g2.
+COMMAND> shields up
+Shields raised.
+COMMAND> dhields down
+LEGAL COMMANDS ARE:
+SRSCAN       STATUS       REQUEST      LRSCAN       
+PHASERS      TORPEDO      PHOTONS      MOVE         SHIELDS      
+DOCK         DAMAGES      CHART        IMPULSE      REST         
+WARP         SENSORS      ORBIT        TRANSPORT    MINE         
+CRYSTALS     SHUTTLE      PLANETS      REPORT       COMPUTER     
+COMMANDS     EMEXIT       PROBE        SAVE         FREEZE       
+OPTIONS      ABANDON      DESTRUCT     DEATHRAY     CAPTURE      
+CLOAK        DEBUG        MAYDAY       SOS          CALL         
+QUIT         HELP         SCORE        CURSES                    
+
+COMMAND> m a j1
+
+COMMAND> m a a1
+
+COMMAND> shields up
+Shields already up.
+COMMAND> m a f2 j1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f2.
+
+Enemy attack reduces shield strength to 94%,   torpedoes left 10
+COMMAND> phasers
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Manual or automatic? a
+Phasers locked on target. Energy available: 3444.26
+1502 units required. Units to fire= 1502
+
+Shields lowered.
+
+748 unit hit on Commander at Sector d10
+***Commander at Sector d10 destroyed.
+
+Shields raised.
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a e1 j10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant e1.
+COMMAND> m a a5
+
+COMMAND> dock
+Docked.
+COMMAND> probe
+3 probes left
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- e8
+
+Ensign Chekov-  "The deep space probe is launched, Captain."
+COMMAND> m a b2 j1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant b2.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e2."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e3."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e4."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e5."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e6."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e7."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e8."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "The deep space probe has left the galaxy."
+COMMAND> shields up
+Shields raised.
+COMMAND> m a c3 j10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant c3.
+COMMAND> m a b3 j10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant b3.
+
+Enemy attack reduces shield strength to 94%,   torpedoes left 10
+COMMAND> torp
+10 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- c10
+
+Torpedo track- i10   h10   g10   
+f10   e10   d10   c10   
+***Klingon at Sector c10 destroyed.
+
+Enemy attack reduces shield strength to 92%,   torpedoes left 9
+COMMAND> phasers
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Manual or automatic? a
+Phasers locked on target. Energy available: 3690.22
+707 units required. Units to fire= 707
+
+Shields lowered.
+
+146 unit hit on Klingon at Sector j2
+***Klingon at Sector j2 destroyed.
+186 unit hit on Klingon at Sector a1
+***Klingon at Sector a1 destroyed.
+223 expended on empty space.
+
+Shields raised.
+COMMAND> m a i8
+
+
+Enterprise blocked by object at i9;
+Emergency stop required 125 units of energy.
+Collision detected
+COMMAND> m a b10
+
+COMMAND> m a b5
+
+COMMAND> torp
+9 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- a1
+
+Torpedo track- b4   b3   a2   
+a1   
+Torpedo missed.
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a b7 a10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant b7.
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 3939.20
+     Supernova in Quadrant d2; caution advised.
+COMMAND> shields
+Do you wish to change shield energy? no
+Please answer with "y" or "n": n
+Shields are down. Do you want them up? y
+Shields raised.
+COMMAND> m a a8 j1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant a8.
+
+Enemy attack reduces shield strength to 90%,   torpedoes left 8
+COMMAND> deathray
+
+Spock-  "Captain, the 'Experimental Death Ray'
+  is highly unpredictible.  Considering the alternatives,
+  are you sure this is wise?" y
+Spock-  "Acknowledged."
+
+WHOOEE ... WHOOEE ... WHOOEE ... WHOOEE
+Crew scrambles in emergency preparation.
+Spock and Scotty ready the death ray and
+prepare to channel all ship's power to the device.
+
+Spock-  "Preparations complete, sir."
+Kirk-  "Engage!"
+
+WHIRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRRR
+Sulu- "Captain!  It's working!"
+
+***Klingon at Sector b8 destroyed.
+Ensign Chekov-  "Congratulations, Captain!"
+
+
+
+It is stardate 3939.5.
+
+The remaining 1 Romulans surrender to Starfleet Command.
+You have smashed the Klingon invasion fleet and saved
+the Federation.
+
+In fact, you have done so well that Starfleet Command
+promotes you one step in rank from "Novice" to "Fair".
+
+LIVE LONG AND PROSPER.
+
+
+Your score --
+     1 Romulans captured                      1
+     4 ordinary Klingons destroyed           40
+     1 Klingon commanders destroyed          50
+  0.57 Klingons per stardate                283
+Bonus for winning Novice game               100
+
+TOTAL SCORE                                 472
+Spock-  "Captain, I believe the `Experimental Death Ray'
+   has been rendered nonfunctional."
+
+May the Great Bird of the Galaxy roost upon your home planet.

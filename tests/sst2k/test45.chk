@@ -1,0 +1,97 @@
+# seed 1770000295
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests manual phasers preserve target slots when sensors cannot locate a commander.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2774.
+
+17 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in e3  e7  g3  d6  
+
+The Enterprise is currently in Quadrant e5 Sector h7
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> shields down
+Shields lowered.
+*** Commander from Sector b5 advances to Sector e5.
+
+416 unit hit from Klingon at h8
+
+***CRITICAL HIT--S. R. Sensors damaged.
+378 unit hit on the Enterprise
+***CRITICAL HIT--D. S. Probe damaged.
+339 unit hit on the Enterprise
+***CRITICAL HIT--Transporter damaged.
+274 unit hit on the Enterprise
+***CRITICAL HIT--Photon Tubes damaged.
+637 unit hit on the Enterprise
+***CRITICAL HIT--L. R. Sensors and Shuttle Craft damaged.
+128 unit hit on the Enterprise
+75 unit hit on the Enterprise
+
+Energy left 2748    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 21 casualties
+   in that last attack."
+COMMAND> damages
+DEVICE                             REPAIR TIMES
+                                   IN FLIGHT                DOCKED
+  S. R. Sensors             	    6.43		    1.60
+  L. R. Sensors             	    4.95		    1.23
+  Photon Tubes              	    5.03		    1.25
+  Shuttle Craft             	   10.19		    2.54
+  Transporter               	    5.98		    1.49
+  D. S. Probe               	    7.47		    1.86
+COMMAND> phasers manual
+
+Energy available= 2748.22
+(0)  units to fire at Klingon at Sector h8-  0
+(0)  units to fire at Klingon at Sector i8-  0
+(0)  units to fire at Klingon at Sector j7-  0
+(0)  units to fire at Klingon at Sector j8-  0
+Commander can't be located without short range scan.
+(0)  units to fire at Klingon at Sector d1-  500
+(0)  units to fire at Klingon at Sector a1-  1
+
+338 unit hit on Klingon at Sector d1
+***Klingon at Sector d1 destroyed.
+0 unit hit on Klingon at Sector a1
+
+307 unit hit on the Enterprise
+***CRITICAL HIT--Impulse Engines damaged.
+271 unit hit on the Enterprise
+***CRITICAL HIT--Shields damaged.
+244 unit hit on the Enterprise
+202 unit hit on the Enterprise
+579 unit hit on the Enterprise
+***CRITICAL HIT--L. R. Sensors and L. R. Sensors damaged.
+64 unit hit on the Enterprise
+
+Energy left 577    shields damaged, 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 9 casualties
+   in that last attack."
+COMMAND> status
+Stardate      2774.2, Time Left 7.25
+Condition     RED, 8 DAMAGES
+Position      e5 , h7
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        577.17
+Torpedoes     10
+Shields       DAMAGED, 100% 2500.0 units
+Klingons Left 16
+Major system  Triacus
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

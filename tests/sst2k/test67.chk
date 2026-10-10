@@ -1,0 +1,64 @@
+# seed 751
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests ABANDON retries placement after exhausting its adjacent-sector attempts.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3036.
+
+19 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in e7  d3  
+
+The Enterprise is currently in Quadrant b7 Sector f10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> abandon
+
+***ABANDON SHIP!  ABANDON SHIP!
+***ALL HANDS ABANDON SHIP!
+
+Captain and crew escape in shuttle craft.
+Entire crew of 428 left to die in outer space.
+
+You are captured by Klingons and released to
+the Federation in a prisoner-of-war exchange.
+Starfleet puts you in command of another ship,
+the Faerie Queene, which is antiquated but,
+still useable.
+COMMAND> status
+Stardate      3036.8, Time Left 7.00
+Condition     DOCKED, 0 DAMAGES
+Position      d3 , i2
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        3000.00
+Torpedoes     6
+Shields       DOWN, 100% 1250.0 units
+Klingons Left 19
+Sector is uninhabited
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   . . . . * . . . . . 
+c   . . . . . . . . . . 
+d   . . . .   . . . . . 
+e   . . . . . . . P . . 
+f   . . . . . . . . . . 
+g   . . . . . . . . . . 
+h   . . . . . . . . . . 
+i   . F . . . . . . . . 
+j   . . B . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.
+Exit status: 0

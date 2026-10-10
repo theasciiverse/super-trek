@@ -1,0 +1,16 @@
+# seed 1770000295
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests manual phasers preserve target slots when sensors cannot locate a commander.
+#
+shields down
+damages
+phasers manual
+0
+0
+0
+0
+500
+1
+status
+quit

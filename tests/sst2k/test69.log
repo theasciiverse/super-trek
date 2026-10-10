@@ -1,0 +1,12 @@
+# seed 1
+# Tests initial resource budgets agree with elapsed time across game settings.
+#
+novice short 2026
+fair short 2026
+good short 2026
+expert short 2026
+emeritus short 2026
+good medium 2026
+good long 2026
+good short 1973
+good sandbox 2026

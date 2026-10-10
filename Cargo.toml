@@ -1,0 +1,14 @@
+[package]
+name = "super-trek"
+version = "0.1.0"
+edition = "2024"
+rust-version = "1.88"
+description = "Super Star Trek, the 1970s classic, ported from ESR's SST2K for the Asciiverse catalog"
+license-file = "NOTICE"
+publish = false
+
+[[bin]]
+name = "super-trek"
+path = "src/main.rs"
+
+[dependencies]

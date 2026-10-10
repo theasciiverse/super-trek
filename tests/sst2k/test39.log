@@ -1,0 +1,57 @@
+# seed 1771788610
+# arguments regular short novice 2026
+# SST2K version 2.9
+# Tests victory when the death ray destroys the last Klingon.
+#
+probe
+y
+n
+a
+a8
+m a g5 a10
+m a j10
+m a g2 j10
+shields up
+dhields down
+m a j1
+m a a1
+shields up
+m a f2 j1
+phasers
+a
+1502
+shields down
+m a e1 j10
+m a a5
+dock
+probe
+y
+n
+a
+e8
+m a b2 j1
+shields up
+m a c3 j10
+m a b3 j10
+torp
+1
+c10
+phasers
+a
+707
+m a i8
+m a b10
+m a b5
+torp
+1
+a1
+shields down
+m a b7 a10
+shields
+no
+n
+y
+m a a8 j1
+deathray
+y
+quit

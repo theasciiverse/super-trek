@@ -1,0 +1,42 @@
+# seed 1771728577
+# arguments regular medium good
+# SST2K version 2.8
+# Test critical hits and death by Supercommander
+# recorded by esr@snark.thyrsus.com on Sat Feb 21 21:49:37 2026
+#
+
+chart
+shields up
+m a j1
+
+m a d10
+m e8 a1
+m a e8 1 1
+phasers
+a
+565
+m a a6
+torp
+1
+e6
+capture
+chart
+m a e3
+chart
+m a f8 a1
+torp
+3
+e7
+h5
+j7
+torp
+3
+d6
+j7
+j8
+chart
+shields down
+chart
+m a f6 a10
+shields down
+n

@@ -1,0 +1,66 @@
+# seed 1770000756
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a weakened armed Klingon surrenders when its capture chance exceeds 100 percent.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3831.
+
+15 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in g4  h8  
+
+The Enterprise is currently in Quadrant d7 Sector b3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> phasers manual 150
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Energy available= 4799.99
+
+Shields lowered.
+
+135 unit hit on Klingon at Sector b2
+
+Shields raised.
+
+Enemy attack reduces shield strength to 96%,   torpedoes left 10
+COMMAND> capture
+Klingon captain at b2 surrenders.
+148 Klingons commit suicide rather than be taken captive.
+52 captives taken
+***Klingon at Sector b3 destroyed.
+COMMAND> report
+You were playing a short good game.
+Your secret password is "awp"
+1 of 15 Klingons have been killed.
+The Super Commander has not been destroyed.
+There are 2 bases.
+No Starbase is currently under attack.
+52 Klingons in brig.
+You have 4 deep space probes.
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   . . E . . . . . . . 
+c   . . . . . . . . . . 
+d   . . . . . . . . . . 
+e   . . . . . . . . . * 
+f   . . . . .   . . . . 
+g     .   . * . . . . . 
+h   . . . . . . * . . . 
+i   . . . . * . . . . * 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

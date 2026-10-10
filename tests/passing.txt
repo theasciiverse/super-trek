@@ -1,0 +1,1 @@
+# Recorded SST2K games the port reproduces exactly; tests/replay.rs keeps them passing.

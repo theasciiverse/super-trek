@@ -1,0 +1,8 @@
+# seed 1
+# Tests Supercommander base attacks start, respect commander targets, and expire.
+#
+available
+radio-damaged
+commander-elsewhere
+commander-same-base
+passive

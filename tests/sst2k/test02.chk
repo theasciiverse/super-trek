@@ -1,0 +1,87 @@
+# seed 1556101787
+# arguments regular short good 2023
+# SST2K version 2.4
+# Test critical hit on sensors
+# recorded by esr@snark.thyrsus.com on Wed Apr 24 06:29:47 2019
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 4340.
+
+21 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+3 starbases in d8  g5  b2  
+
+The Enterprise is currently in Quadrant h8 Sector j3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | ...  .1.  ...  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ...  .1.   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  .1.  ...  ..8  ..1   |
+h | ...  ...  ...  ...  ...  ...  ..8 <..9>  |
+
+COMMAND> m a 3 6
+
+COMMAND> m a 7 8 10 20
+
+Beg your pardon, Captain?
+COMMAND> m a 7 8 10 10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant g8.
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 4340.41
+     Supernova in Quadrant c8; caution advised.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | ...  .1.  ...  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ***   |
+d | ...  ...  ...  ...  ...  ...  ...  .1.   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ..9  107   |
+g | ...  ...  ...  ...  .1.  ...  ..8 <..1>  |
+h | ...  ...  ...  ...  ...  ...  ..8  ..9   |
+
+COMMAND> m a 1 10
+
+COMMAND> m a 6 8 10 10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f8.
+
+606 unit hit from Commander at g7
+
+***CRITICAL HIT--L. R. Sensors and S. R. Sensors damaged.
+
+Energy left 4123    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 6 casualties
+   in that last attack."
+
+466 unit hit on the Enterprise
+***CRITICAL HIT--Shields damaged.
+
+Energy left 3656    shields damaged, 100%,   torpedoes left 10
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

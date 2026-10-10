@@ -1,0 +1,9 @@
+# seed 1770000066
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests damaged transport near a planet requires standard orbit before a shuttle offer.
+#
+shields down
+damages
+transport
+quit

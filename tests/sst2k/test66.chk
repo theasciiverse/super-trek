@@ -1,0 +1,54 @@
+# seed 8
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests leaving a planet quadrant prevents orbiting and shuttle use at its old sector.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3947.
+
+16 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in a7  d6  d3  a5  
+
+The Enterprise is currently in Quadrant b8 Sector i10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> sensors
+Spock-  "The inhabited planet Deneva 
+        is located at Sector d5, Captain."
+COMMAND> m a c8 d5
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant c8.
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "Captain, the starbase in Quadrant d6
+   reports that it is under attack and that it can
+   hold out only until stardate 3951."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 3948.11
+     Supernova in Quadrant h4; caution advised.
+COMMAND> sensors
+Spock- "No planet in this quadrant, Captain."
+COMMAND> orbit
+
+There is no planet in this sector.
+COMMAND> shuttle
+
+Enterprise not in standard orbit.
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.
+Exit status: 0

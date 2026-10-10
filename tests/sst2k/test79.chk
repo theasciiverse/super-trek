@@ -1,0 +1,4 @@
+14 nonfinite spellings rejected; following input remains readable.
+8 finite values preserved, including signed zero and the float limit.
+Tournament prompt rejects nonfinite IDs and accepts a replacement.
+EOF at the tournament-number retry exits cleanly.

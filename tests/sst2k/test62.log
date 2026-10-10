@@ -1,0 +1,9 @@
+# seed 1
+# arguments
+# SST2K version 2.9
+# Tests complete Expert and Emeritus plaques with even and odd captain name lengths.
+#
+expert.txt
+James Kirk
+emeritus.txt
+James T. Kirk

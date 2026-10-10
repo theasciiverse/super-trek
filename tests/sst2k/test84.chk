@@ -1,0 +1,3 @@
+A CLI save resumes through replay with its saved warp factor and normal commands.
+Executable saved-game payloads are rejected; a new game can still be started.
+The single-file saved-replay exploit is rejected without executing its marker.

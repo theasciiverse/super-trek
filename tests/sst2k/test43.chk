@@ -1,0 +1,46 @@
+# seed 1770000000
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY ends the game after all three rematerialization attempts fail.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2514.
+
+17 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+3 starbases in h5  e3  c8  
+
+The Enterprise is currently in Quadrant f5 Sector f8
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> mayday
+Starbase in Quadrant h5 responds--Enterprise dematerializes1st attempt to re-materialize Enterprise     . . . . .     fails.
+2nd attempt to re-materialize Enterprise     . . . . .     fails.
+3rd attempt to re-materialize Enterprise     . . . . .     fails.
+
+
+
+It is stardate 2514.3.
+
+Starbase was unable to re-materialize your starship.
+Sic transit gloria mundi.
+The Federation will be destroyed.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+     1 calls for help from starbase         -45
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                -347
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,55 @@
+# seed 4
+# arguments
+# SST2K version 2.8
+# Test death via excessive rest (ChatGPT-5.2)
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? n
+Wayback setting (press enter for current year): 2023
+
+
+It is stardate 2546. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 3 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 4 supporting starbases.
+Starbase locations-  a6  h7  d1  h6  
+
+The Enterprise is currently in Quadrant f8 Sector f7
+
+Good Luck!
+COMMAND> rest
+How long? 9999
+Are you sure? y
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 2547.95
+     Supernova in Quadrant a2; caution advised.
+
+
+
+It is stardate 2553.9.
+
+Your time has run out and the Federation has been
+conquered.  Your starship is now Klingon property,
+and you are put on trial as a war criminal.  On the
+basis of your record, you are acquitted.
+
+LIVE LONG AND PROSPER.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+
+TOTAL SCORE                                   0
+
+May the Great Bird of the Galaxy roost upon your home planet.

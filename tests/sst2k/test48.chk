@@ -1,0 +1,67 @@
+# seed 1770000102
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a retreating commander moves without creating another commander.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2593.
+
+21 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in a8  e5  
+
+The Enterprise is currently in Quadrant h1 Sector f5
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> phasers manual 0 200
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Energy available= 4799.99
+
+Shields lowered.
+
+153 unit hit on Commander at Sector b7
+
+Shields raised.
+
+Enemy attack reduces shield strength to 91%,   torpedoes left 10
+COMMAND> score
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+
+TOTAL SCORE                                   0
+COMMAND> report
+You were playing a short good game.
+Your secret password is "aem"
+0 of 21 Klingons have been killed.
+The Super Commander has not been destroyed.
+There are 2 bases.
+No Starbase is currently under attack.
+You have 4 deep space probes.
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . * . . . . * 
+b   . . . * . . . . . . 
+c   . . . . . . . . . . 
+d   . . . . . . . . . . 
+e   . . * . . . * . . . 
+f   . . . * E . . . . * 
+g   . . . . . .   . .   
+h   . . . . . K . . . . 
+i   . . . . . . . . . . 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

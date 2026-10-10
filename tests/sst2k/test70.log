@@ -1,0 +1,27 @@
+# Tests retreat destinations and enemy counts at sector and galaxy boundaries.
+# Source quadrant, enemy sector, attempted zero-based row/column, destination.
+#
+d4 j5 10 4 e4
+d4 e10 4 10 d5
+d4 a5 -1 4 c4
+d4 e1 4 -1 d3
+d4 a1 -1 0 c4
+d4 a1 0 -1 d3
+d4 a10 -1 9 c4
+d4 j1 9 -1 d3
+d4 j1 10 0 e4
+d4 a10 0 10 d5
+d4 j10 10 9 e4
+d4 j10 9 10 d5
+d4 a1 -1 -1 c3
+d4 a10 -1 10 c5
+d4 j1 10 -1 e3
+d4 j10 10 10 e5
+a4 a5 -1 4 blocked
+h4 j5 10 4 blocked
+d1 e1 4 -1 blocked
+d8 e10 4 10 blocked
+a4 a10 -1 10 blocked
+h4 j1 10 -1 blocked
+d1 a1 -1 -1 blocked
+d8 j10 10 10 blocked

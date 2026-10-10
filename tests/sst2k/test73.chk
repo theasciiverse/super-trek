@@ -1,0 +1,8 @@
+radio-damaged: quadrant destroyed; chart respects discovery; no base reappears.
+radio-working: quadrant destroyed; chart respects discovery; no base reappears.
+unexplored-base: quadrant destroyed; chart respects discovery; no base reappears.
+docked: quadrant destroyed; chart respects discovery; no base reappears.
+sensor-discovery: quadrant destroyed; chart respects discovery; no base reappears.
+quadrant-entry: quadrant destroyed; chart respects discovery; no base reappears.
+induced: quadrant destroyed; chart respects discovery; no base reappears.
+Legacy save: known supernovae preserved in the current state and time-warp history.

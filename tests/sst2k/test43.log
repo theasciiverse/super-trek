@@ -1,0 +1,7 @@
+# seed 1770000000
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY ends the game after all three rematerialization attempts fail.
+#
+mayday
+quit

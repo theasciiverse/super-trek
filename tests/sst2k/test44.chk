@@ -1,0 +1,44 @@
+# seed 1770000008
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY handles failure to find a valid landing sector.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2216.
+
+19 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in h8  c1  d8  a1  
+
+The Enterprise is currently in Quadrant e5 Sector b4
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> mayday
+Starbase in Quadrant d8 responds--Enterprise dematerializesYou have been lost in space...
+
+
+
+It is stardate 2216.6.
+
+Starbase was unable to re-materialize your starship.
+Sic transit gloria mundi.
+The Federation will be destroyed.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+     1 calls for help from starbase         -45
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                -347
+
+May the Great Bird of the Galaxy roost upon your home planet.

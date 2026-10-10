@@ -1,0 +1,50 @@
+# seed 1773138673
+# arguments 
+# SST2K version 2.8
+# Test sandbox game ending in win
+# recorded by esr@snark.thyrsus.com on Tue Mar 10 06:31:13 2026
+#
+r
+s
+n
+
+probe
+y
+n
+a
+a8
+
+m a j7
+m a b2 a7
+shields up
+torp
+1
+f3
+m a c5 a1
+m a d3 a10
+shields down
+m a j10
+shields up
+m a e2 a10
+torp
+1
+e1
+shields down
+m a a1
+m a j1
+shields up
+m a f2 a4
+shields down
+m a f2
+dock
+undock
+m a j1
+m a h2 a1
+shields up
+m a d4 j1
+torp
+1
+i5
+torp 1
+j7
+n

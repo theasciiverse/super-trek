@@ -1,0 +1,40 @@
+# seed 1556120044
+# arguments regular short good 2023
+# Test deep-space probes
+# recorded by esr@snark.thyrsus.com on Wed Apr 24 11:34:04 2019
+#
+chart
+m a 1 10
+s hup
+m a 2 7 1 1
+chart
+probe
+y
+n
+a
+2 1
+sh up
+m 1 7 10 1
+m a 6 10
+torp 2 1 8 1 8
+torp 1 10 7
+chart
+m a 10 6
+torp 2 10 6
+torp 2 10 7 10 7
+chart
+probe
+y
+n
+a
+7 10
+chart
+probe
+y
+n
+a
+7 8
+chart
+m a 5 3 5 5
+chart
+quit

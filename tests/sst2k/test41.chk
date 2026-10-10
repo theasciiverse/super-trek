@@ -1,0 +1,56 @@
+# seed 1770000350
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY uses a local starbase in row zero.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2665.
+
+16 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in f6  a7  g3  h6  a4  
+
+The Enterprise is currently in Quadrant a7 Sector e4
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . B . . . . . . . . 
+b   . . . . . . . . . . 
+c   . * . . . . . . . . 
+d   . . . . . . . . . . 
+e   . . . E . . * . . . 
+f   . . . . . . . . . . 
+g   . . .   . . . . . . 
+h     . . . . . * . . * 
+i   . . . . . . . . . . 
+j   . . * . . . . . . . 
+COMMAND> mayday
+Starbase in Quadrant a7 responds--Enterprise dematerializes1st attempt to re-materialize Enterprise     . . . . .     fails.
+2nd attempt to re-materialize Enterprise     . . . . .     fails.
+3rd attempt to re-materialize Enterprise     . . . . .     succeeds.
+
+Lt. Uhura-  "Captain, we made it!"
+COMMAND> status
+Stardate      2665.0, Time Left 7.00
+Condition     DOCKED, 0 DAMAGES
+Position      a7 , a1
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        5000.00
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 16
+Sector is uninhabited
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

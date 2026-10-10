@@ -1,0 +1,315 @@
+# seed 1771728577
+# arguments regular medium good
+# SST2K version 2.8
+# Test critical hits and death by Supercommander
+# recorded by esr@snark.thyrsus.com on Sat Feb 21 21:49:37 2026
+#
+
+
+-SUPER- STAR TREK
+
+Wayback setting (press enter for current year): 
+
+
+Stardate 4721.
+
+38 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+14 stardates.
+5 starbases in f7  b3  b1  h2  g8  
+
+The Enterprise is currently in Quadrant f6 Sector e10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | .1.  ...  .1.  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ..1  ..2  ..3  ...   |
+f | ...  ...  ...  ...  ..7 <..7> .15  ...   |
+g | ...  ...  ...  ...  906  ..1  ..2  .1.   |
+h | ...  .1.  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> shields up
+Shields raised.
+COMMAND> m a j1
+
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   a planet in Quadrant e8 has been destroyed
+   by the Super-commander."
+COMMAND> 
+COMMAND> m a d10
+
+COMMAND> m e8 a1
+
+Beg your pardon, Captain?
+COMMAND> m a e8 1 1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant e8.
+
+22 unit hit from Klingon at e1
+
+25 unit hit from Klingon at e6
+
+
+Energy left 4374    shields up 79%,   torpedoes left 10
+
+50 unit hit from Klingon at b2
+
+52 unit hit from Klingon at e1
+
+43 unit hit from Klingon at e6
+
+
+Energy left 4227    shields up 65%,   torpedoes left 10
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   the Super-commander is in Quadrant f8.
+COMMAND> phasers
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Manual or automatic? a
+Phasers locked on target. Energy available: 3601.89
+565 units required. Units to fire= 565
+
+Shields lowered.
+
+124 unit hit on Klingon at Sector b2
+***Klingon at Sector b2 destroyed.
+136 unit hit on Klingon at Sector e1
+***Klingon at Sector e1 destroyed.
+141 expended on empty space.
+
+Shields raised.
+
+33 unit hit from Klingon at e6
+
+
+Energy left 3003    shields up 63%,   torpedoes left 10
+COMMAND> m a a6
+
+
+34 unit hit from Klingon at e6
+
+
+Energy left 2969    shields up 61%,   torpedoes left 10
+COMMAND> torp
+10 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- e6
+
+Torpedo track- b6   c6   d6   
+e6   
+***Klingon at Sector e6 destroyed.
+COMMAND> capture
+Uhura- "Getting no response, sir."
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | .1.  ...  .1.  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ..6  ..5   |
+e | ...  ...  ...  ...  ..1  ..2  ..3 <..4>  |
+f | ...  ...  ...  ...  ..7  ..7  .15  405   |
+g | ...  ...  ...  ...  906  ..1  102  .1.   |
+h | ...  .1.  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a e3
+
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | .1.  ...  .1.  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ..6  ..5   |
+e | ...  ...  ...  ...  ..1  ..2  ..3 <..4>  |
+f | ...  ...  ...  ...  ..7  ..7  .15  405   |
+g | ...  ...  ...  ...  906  ..1  102  .1.   |
+h | ...  .1.  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a f8 a1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f8.
+
+139 unit hit from Klingon at a3
+
+74 unit hit from Klingon at a6
+
+187 unit hit from Commander at e7
+
+40 unit hit from Klingon at d10
+
+
+Energy left 2277    shields up 44%,   torpedoes left 9
+
+153 unit hit from Klingon at a3
+
+59 unit hit from Klingon at a6
+
+168 unit hit from Commander at e7
+
+24 unit hit from Klingon at d10
+
+
+Energy left 1871    shields up 35%,   torpedoes left 9
+COMMAND> torp
+9 torpedoes left.
+Number of torpedoes to fire- 3
+Target sector for torpedo number 1- e7
+Target sector for torpedo number 2- h5
+Target sector for torpedo number 3- j7
+
+Track for torpedo number 1-  b2   b3   c4   
+d5   e6   e7   
+***Commander at Sector e7 damaged but not destroyed.
+
+Track for torpedo number 2-  b2   c2   d3   
+e3   f4   g4   h5   i5   
+j6   
+Torpedo missed.
+
+Track for torpedo number 3-  b2   c2   d3   
+e4   f4   g5   h6   i6   
+j7   
+Star at Sector j7 novas.
+*** Commander from Sector e7 retreats to Sector f8.
+
+129 unit hit from Klingon at a3
+
+63 unit hit from Klingon at a6
+
+34 unit hit from Commander at f8
+
+31 unit hit from Klingon at d10
+
+
+Energy left 1454    shields up 30%,   torpedoes left 6
+COMMAND> torp
+6 torpedoes left.
+Number of torpedoes to fire- 3
+Target sector for torpedo number 1- d6
+Target sector for torpedo number 2- j7
+Target sector for torpedo number 3- j8
+
+Track for torpedo number 1-  b2   b3   c4   
+c5   d6   e7   e8   
+Star at Sector e8 novas.
+***Commander at Sector f8 destroyed.
+
+Track for torpedo number 2-  b2   c2   d3   
+e4   f4   g5   h6   i6   
+j7   
+Torpedo missed.
+
+Track for torpedo number 3-  b2   c3   d3   
+e4   f5   g6   h7   i8   
+j8   
+Torpedo missed.
+
+107 unit hit from Klingon at a3
+
+42 unit hit from Klingon at a6
+
+22 unit hit from Klingon at d10
+
+
+Energy left 1282    shields up 28%,   torpedoes left 3
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | .1.  ...  .1.  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ..6  ..5   |
+e | ...  ...  ...  ...  ..1  ..2  ..3  ..4   |
+f | ...  ...  ...  ...  ..7  ..7  .15 <303>  |
+g | ...  ...  ...  ...  906  ..1  102  .15   |
+h | ...  .1.  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> shields down
+Shields lowered.
+
+107 unit hit from Klingon at a3
+
+45 unit hit from Klingon at a6
+
+19 unit hit from Klingon at d10
+
+
+Energy left 1109    shields down 28%,   torpedoes left 3
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | .1.  ...  .1.  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ..6  ..5   |
+e | ...  ...  ...  ...  ..1  ..2  ..3  ..4   |
+f | ...  ...  ...  ...  ..7  ..7  .15 <303>  |
+g | ...  ...  ...  ...  906  ..1  102  .15   |
+h | ...  .1.  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a f6 a10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f6.
+
+[ANNOUNCEMENT ARRIVING...]
+
+***Enterprise caught in long range tractor beam--
+Enterprise is pulled to Quadrant g7, Sector c9
+Shields raised.
+
+671 unit hit from Super-commander at d6
+
+***CRITICAL HIT--Navigation System and D. S. Probe damaged.
+
+Energy left 250    shields up 19%,   torpedoes left 3
+
+Mc Coy-  "Sickbay to bridge.  We suffered 3 casualties
+   in that last attack."
+COMMAND> shields down
+Shields lowered.
+*** Super-commander from Sector d6 advances to Sector d9.
+
+1028 unit hit from Super-commander at d9
+
+***CRITICAL HIT--S. R. Sensors and Photon Tubes damaged.
+
+
+
+It is stardate 4723.9.
+
+The Enterprise has been destroyed in battle.
+
+Dulce et decorum est pro patria mori.
+The Federation will be destroyed.
+
+
+Your score --
+     3 ordinary Klingons destroyed           30
+     1 Klingon commanders destroyed          50
+  1.53 Klingons per stardate                764
+     2 stars destroyed by your action       -10
+     3 casualties incurred                   -3
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                 528
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,50 @@
+# seed 1770000001
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests damaged transport without a planet is refused without offering a shuttle.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3639.
+
+17 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in b7  f6  h1  c6  
+
+The Enterprise is currently in Quadrant a1 Sector g4
+
+Good Luck!
+  YOU'LL NEED IT.
+
+LT. Uhura- "Captain, an urgent message.
+  I'll put it on audio."  CLICK
+
+INTRUDER! YOU HAVE VIOLATED THE ROMULAN NEUTRAL ZONE.
+LEAVE AT ONCE, OR YOU WILL BE DESTROYED!
+COMMAND> shields down
+Shields lowered.
+
+361 unit hit from Romulan at i1
+
+***CRITICAL HIT--Transporter damaged.
+
+Energy left 4638    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 4 casualties
+   in that last attack."
+COMMAND> damages
+DEVICE                             REPAIR TIMES
+                                   IN FLIGHT                DOCKED
+  Transporter               	    6.32		    1.57
+COMMAND> transport
+
+Enterprise not in standard orbit.
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

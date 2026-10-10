@@ -1,0 +1,6 @@
+# seed 1
+# Tests CLI saved-game replay compatibility and rejection of executable replay payloads.
+#
+warp 6
+save {savefile}
+quit

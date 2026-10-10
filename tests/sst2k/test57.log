@@ -1,0 +1,15 @@
+# seed 1
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests malformed coordinates reject movement and torpedoes while the game continues.
+#
+status
+move auto a1x
+move auto b2 c3x
+move auto a1.5
+move auto a
+torpedo 1 a1x
+status
+move auto d9
+status
+quit

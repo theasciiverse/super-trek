@@ -1,0 +1,15 @@
+# seed 1692187822
+# arguments regular medium novice 2023
+# SST2K version 2.7
+# Tests destroying the Space Thingy, leaving its quadrant, and returning.
+# recorded by esr@snark.thyrsus.com on Wed Aug 16 08:28:50 2023
+#
+m a e8
+m a a1
+m a c2 j10
+sr
+torp 1 d1
+m a b2 e5
+m a c2 j10
+sr
+quit

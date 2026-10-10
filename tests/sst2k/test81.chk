@@ -1,0 +1,4 @@
+152 lowercase and uppercase REQUEST prefixes return the correct single field.
+Invalid items list the documented names; missing items prompt and input recovers.
+Time and enemy/base counts follow current state; Sandbox reports unlimited time.
+Screen mode suppresses REQUEST and REQ, including after switching from TTY mode.

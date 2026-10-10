@@ -1,0 +1,74 @@
+# seed 104
+# arguments regular short expert 2026
+# SST2K version 2.9
+# Tests a retreat across the southern edge relocates the enemy to the next quadrant.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3475.
+
+30 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in f4  g2  d8  a2  f8  
+
+The Enterprise is currently in Quadrant c4 Sector e3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  .1.  ...  ...  ...  ...  ...  ...   |
+b | ...  ...  ..5  901  ..5  ...  ...  ...   |
+c | ...  ...  ..2 <309> ..4  ...  ...  ...   |
+d | ...  ...  905  ..9  ..7  ...  ...  .1.   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  .1.  ...  ...  ...  .1.   |
+g | ...  .1.  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> shields transfer 1
+Shield energy maximized.
+Excess energy requested returned to ship energy
+*** Commander from Sector c5 advances to Sector d4.
+*** Klingon from Sector c8 retreats to Sector c10.
+
+34 unit hit from Klingon at c10
+
+
+Energy left 4965    shields up 65%,   torpedoes left 10
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  .1.  ...  ...  ...  ...  ...  ...   |
+b | ...  ...  ..5  901  ..5  ...  ...  ...   |
+c | ...  ...  ..2 <209> ..4  ...  ...  ...   |
+d | ...  ...  905  109  ..7  ...  ...  .1.   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  .1.  ...  ...  ...  .1.   |
+g | ...  .1.  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . * . . . . 
+b   . . . . * . . . * . 
+c   . . . . . . . . . K 
+d   . . . C . . . . * * 
+e   . * E * . . . . . . 
+f   . . . . . . . . . . 
+g   . . . . . . . . . . 
+h   . . .   . . . . . . 
+i   * . . . . . * . . . 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.
+Exit status: 0

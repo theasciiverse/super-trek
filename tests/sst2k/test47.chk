@@ -1,0 +1,113 @@
+# seed 1770000350
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests leaving a starbase quadrant clears its local docking coordinates.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2665.
+
+16 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in f6  a7  g3  h6  a4  
+
+The Enterprise is currently in Quadrant a7 Sector e4
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> m a e1
+
+COMMAND> m a a1
+
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 2665.28
+     Supernova in Quadrant e3; caution advised.
+COMMAND> dock
+Docked.
+COMMAND> m a a6 a1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant a6.
+
+403 unit hit from Klingon at b1
+
+***CRITICAL HIT--L. R. Sensors damaged.
+229 unit hit from Klingon at c4
+
+***CRITICAL HIT--Impulse Engines damaged.
+176 unit hit from Klingon at f4
+
+102 unit hit from Klingon at f8
+
+68 unit hit from Klingon at d10
+
+
+Energy left 4019    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 8 casualties
+   in that last attack."
+
+87 unit hit from Klingon at d10
+
+90 unit hit from Klingon at f8
+
+127 unit hit from Klingon at c4
+
+95 unit hit from Klingon at f4
+
+140 unit hit from Klingon at b1
+
+
+Energy left 3477    shields down 100%,   torpedoes left 10
+
+Mc Coy-  "Sickbay to bridge.  We suffered 6 casualties
+   in that last attack."
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   E . . . * . . . . . 
+b   K . . . . . . . . . 
+c   . . . K . . . . . . 
+d   . * . .   . . . . K 
+e   . . . . . * @ . . . 
+f   . . . K . . * K . . 
+g   . . . * . . .   . . 
+h   . . . . . . . . . . 
+i   . . . . . * . . . . 
+j   . . . . . . . . . * 
+COMMAND> status
+Stardate      2665.7, Time Left 6.32
+Condition     RED, 2 DAMAGES
+Position      a6 , a1
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        3352.83
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 16
+Major system  Omega IV
+COMMAND> dock
+No starbase available for docking in this quadrant.
+COMMAND> status
+Stardate      2665.7, Time Left 6.32
+Condition     RED, 2 DAMAGES
+Position      a6 , a1
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        3352.83
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 16
+Major system  Omega IV
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

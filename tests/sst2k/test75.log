@@ -1,0 +1,6 @@
+# seed 1
+# Tests a new game clears the previous Supercommander location when none is allocated.
+#
+5 fair 2026
+5 novice 2026
+5 good 1973

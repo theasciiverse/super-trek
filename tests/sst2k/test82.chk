@@ -1,0 +1,17 @@
+expert-fast: citation printed.
+emeritus-fast: citation printed.
+expert-killrate: citation printed.
+emeritus-killrate: citation printed.
+expert-refusal: citation declined.
+emeritus-refusal: citation declined.
+expert-saved: citation blocked.
+emeritus-saved: citation blocked.
+expert-debug-saved: citation printed.
+emeritus-debug-saved: citation printed.
+novice-win: citation ineligible.
+fair-win: citation ineligible.
+good-win: citation ineligible.
+expert-slow: citation ineligible.
+emeritus-slow: citation ineligible.
+expert-dead: citation ineligible.
+emeritus-dead: citation ineligible.

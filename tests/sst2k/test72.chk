@@ -1,0 +1,5 @@
+available: attack scheduled; warning sent; base destroyed.
+radio-damaged: attack scheduled; warning suppressed; base destroyed.
+commander-elsewhere: attack scheduled; warning sent; base destroyed.
+commander-same-base: no Supercommander attack scheduled.
+passive: no Supercommander attack scheduled.

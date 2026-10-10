@@ -1,0 +1,13 @@
+Protocol 0: complete state, shared identities, snapshot, enemy, and probe restored.
+Protocol 1: complete state, shared identities, snapshot, enemy, and probe restored.
+Protocol 2: complete state, shared identities, snapshot, enemy, and probe restored.
+Protocol 3: complete state, shared identities, snapshot, enemy, and probe restored.
+Protocol 4: complete state, shared identities, snapshot, enemy, and probe restored.
+Protocol 5: complete state, shared identities, snapshot, enemy, and probe restored.
+Legacy fields migrate after validation, including independent snapshot charts.
+50 games spanning all difficulties and old/modern Wayback settings round-trip.
+Function payloads, constructor side effects, imports, and cached extensions blocked.
+Wrong field types, dimensions, coordinates, nonfinite values, and injected fields rejected.
+Cyclic, truncated, oversized, trailing, persistent-ID, and allocation-abuse inputs rejected.
+51 rejected saves leave the active game and password unchanged.
+A valid save loads successfully after rejected inputs.

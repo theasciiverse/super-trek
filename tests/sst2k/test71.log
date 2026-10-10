@@ -1,0 +1,10 @@
+# seed 104
+# arguments regular short expert 2026
+# SST2K version 2.9
+# Tests a retreat across the southern edge relocates the enemy to the next quadrant.
+#
+chart
+shields transfer 1
+chart
+srscan
+quit

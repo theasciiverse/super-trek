@@ -1,0 +1,10 @@
+# seed 1770001034
+# arguments regular short expert 2026
+# SST2K version 2.9
+# Tests an ordinary Klingon retreat leaves commander locations unchanged.
+#
+shields transfer 1
+score
+report
+srscan
+quit

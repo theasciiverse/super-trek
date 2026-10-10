@@ -1,0 +1,300 @@
+# seed 1771721068
+# arguments regular medium good
+# SST2K version 2.8
+# Test Supercommander death after a torpedo hit and ramming
+# recorded by esr@snark.thyrsus.com on Sat Feb 21 19:44:28 2026
+#
+
+
+-SUPER- STAR TREK
+
+Wayback setting (press enter for current year): 
+
+
+Stardate 2434.
+
+26 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+14 stardates.
+2 starbases in a4  g4  
+
+The Enterprise is currently in Quadrant f5 Sector b3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ...  ...  ...   |
+b | ...  ...  ...  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1 <..2> ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a b10
+
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ...  ...  ...   |
+b | ...  ...  ...  ...  ...  ...  ...  ...   |
+c | ...  ...  ...  ...  ...  ...  ...  ...   |
+d | ...  ...  ...  ...  ...  ...  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1 <..2> ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a h8 1 1
+
+Ensign Chekov- "Course laid in, Captain."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 2435.40
+     Supernova in Quadrant a6; caution advised.
+
+[ANNOUNCEMENT ARRIVING...]
+
+***Enterprise caught in long range tractor beam--
+Enterprise is pulled to Quadrant c5, Sector i4
+Shields raised.
+
+Enemy attack reduces shield strength to 78%,   torpedoes left 10
+COMMAND> torp 2
+Target sector for torpedo number 1- g6
+Target sector for torpedo number 2- g6
+
+Track for torpedo number 1-  h5   g6   
+***Commander at Sector g6 damaged-- displaced by blast to Sector f7 
+
+Track for torpedo number 2-  h5   g6   f7   
+***Commander at Sector f7 destroyed.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ***  ...  ...   |
+b | ...  ...  ...  ..7  ..4  ..4  ...  ...   |
+c | ...  ...  ...  ..6 <..4> ..1  ...  ...   |
+d | ...  ...  ...  ..2  ..3  ..4  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1  ..2  ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a c2 h10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant c2.
+
+Mr. Spock- "Captain, this is most unusual.
+    Please examine your short-range scan."
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ***  ...  ...   |
+b | 305  ..8  ..2  ..7  ..4  ..4  ...  ...   |
+c | 609 <..3> ..9  ..6  ..4  ..1  ...  ...   |
+d | ..2  309  ..4  ..2  ..3  ..4  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1  ..2  ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a e2
+
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ***  ...  ...   |
+b | 305  ..8  ..2  ..7  ..4  ..4  ...  ...   |
+c | 609 <..3> ..9  ..6  ..4  ..1  ...  ...   |
+d | ..2  309  ..4  ..2  ..3  ..4  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1  ..2  ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a c1 e10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant c1.
+
+39 unit hit from Klingon at g7
+
+59 unit hit from Klingon at f6
+
+62 unit hit from Klingon at d6
+
+77 unit hit from Klingon at a7
+
+50 unit hit from Klingon at h2
+
+109 unit hit from Commander at d1
+
+
+Energy left 3325    shields up 52%,   torpedoes left 8
+
+78 unit hit from Klingon at g7
+
+88 unit hit from Klingon at f6
+
+84 unit hit from Klingon at d6
+
+81 unit hit from Klingon at a7
+
+47 unit hit from Klingon at h2
+
+128 unit hit from Commander at d1
+
+
+Energy left 2815    shields up 38%,   torpedoes left 8
+
+Mc Coy-  "Sickbay to bridge.  We suffered 2 casualties
+   in that last attack."
+COMMAND> torp 4
+Maximum of 3 torpedoes per burst.
+COMMAND> torp 3
+Target sector for torpedo number 1- d6
+Target sector for torpedo number 2- f6
+Target sector for torpedo number 3- g7
+
+Track for torpedo number 1-  e9   e8   d7   
+d6   
+***Klingon at Sector d6 destroyed.
+
+Track for torpedo number 2-  e9   e8   f7   
+f6   
+***Klingon at Sector f6 destroyed.
+
+Track for torpedo number 3-  f9   f8   g7   
+***Klingon at Sector g7 destroyed.
+*** Commander from Sector d1 advances to Sector e2.
+
+68 unit hit from Klingon at a7
+
+129 unit hit from Commander at e2
+
+34 unit hit from Klingon at h2
+
+
+Energy left 2533    shields up 33%,   torpedoes left 5
+COMMAND> torp 2
+Target sector for torpedo number 1- a7
+Target sector for torpedo number 2- h2
+
+Track for torpedo number 1-  d9   c9   b8   
+a7   
+***Klingon at Sector a7 destroyed.
+
+Track for torpedo number 2-  e9   f8   f7   
+f6   g5   g4   h3   h2   
+***Klingon at Sector h2 destroyed.
+*** Commander from Sector e2 retreats to Sector e1.
+
+68 unit hit from Commander at e1
+
+
+Energy left 2464    shields up 32%,   torpedoes left 3
+COMMAND> m a f7
+
+
+58 unit hit from Commander at e1
+
+
+Energy left 2406    shields up 31%,   torpedoes left 3
+COMMAND> torp 1
+Target sector for torpedo number 1- e1
+
+Torpedo track- f6   f5   e4   
+e3   e2   e1   
+***Commander at Sector e1 destroyed.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  .1.  ...  ***  ...  ...   |
+b | 305  ..8  ..2  ..7  ..4  ..4  ...  ...   |
+c |<..9> ..3  ..9  ..6  ..4  ..1  ...  ...   |
+d | ..2  309  ..4  ..2  ..3  ..4  ...  ...   |
+e | ...  ...  ...  ..4  ..8  ..8  ...  ...   |
+f | ...  ...  ...  ..1  ..2  ..1  ...  ...   |
+g | ...  ...  ...  .16  ..4  ..8  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> m a j7
+
+COMMAND> warp 7
+Engineer Scott- "Aye, but our maximum safe speed is warp 6."
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a g4 a1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant g4.
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   the Super-commander is in Quadrant h3.
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 2437.43
+     Supernova in Quadrant e1; caution advised.
+
+[ANNOUNCEMENT ARRIVING...]
+
+***Enterprise caught in long range tractor beam--
+Enterprise is pulled to Quadrant h3, Sector a6
+Shields raised.
+
+332 unit hit from Super-commander at h8
+
+***CRITICAL HIT--Transporter damaged.
+
+Energy left 500    shields up 26%,   torpedoes left 2
+COMMAND> torp 2
+Target sector for torpedo number 1- h8
+Target sector for torpedo number 2- h8
+
+Track for torpedo number 1-  b6   c7   d7   
+Star at Sector d7 novas.
+***Star at Sector e7 novas.
+
+Track for torpedo number 2-  b6   c7   d7   
+e7   f8   g8   h8   
+***Super-commander at Sector h8 damaged-- displaced by blast to Sector i8 
+*** Super-commander from Sector i8 advances to Sector h8.
+
+125 unit hit from Super-commander at h8
+
+
+Energy left 374    shields up 25%,   torpedoes left 0
+COMMAND> warp 3
+Helmsman Sulu- "Warp factor 3, Captain."
+COMMAND> m a h8
+
+***RED ALERT!  RED ALERT!
+***COLLISION IMMINENT.
+
+
+***Enterprise rams Super-commander at Sector h8
+***Super-commander at Sector g8 destroyed.
+***Enterprise heavily damaged.
+***Sickbay reports 15 casualties
+***Shields are down.
+
+[ANNOUNCEMENT ARRIVING...]
+DEVICE                             REPAIR TIMES
+                                   IN FLIGHT                DOCKED
+  Transporter               	    5.08		    1.26
+Collision detected
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

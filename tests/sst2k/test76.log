@@ -1,0 +1,6 @@
+# seed 1
+# Tests new missions clear cloak, brig, and scoring state while saved missions preserve them.
+#
+E 400 123 2026
+F 300 0 2026
+E 400 123 1973

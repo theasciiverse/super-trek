@@ -1,0 +1,8 @@
+# seed 1770000092
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests phaser hits stay with their targets after an earlier target is destroyed.
+#
+phasers manual 1000 1 1000
+srscan
+quit

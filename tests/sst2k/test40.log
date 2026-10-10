@@ -1,0 +1,8 @@
+# seed 1
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY from a quadrant with no initialized local base.
+#
+mayday
+status
+quit

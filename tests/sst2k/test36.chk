@@ -1,0 +1,197 @@
+# seed 1773138673
+# arguments
+# SST2K version 2.8
+# Test sandbox game ending in win
+# recorded by esr@snark.thyrsus.com on Tue Mar 10 06:31:13 2026
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? n
+Wayback setting (press enter for current year): 
+
+
+It is stardate 2708. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 3 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 3 supporting starbases.
+Starbase locations-  f2  h2  g1  
+
+The Enterprise is currently in Quadrant a2 Sector c6
+
+Good Luck!
+COMMAND> probe
+4 probes left
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- a8
+
+Ensign Chekov-  "The deep space probe is launched, Captain."
+COMMAND> 
+COMMAND> m a j7
+
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a3."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a4."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a5."
+COMMAND> m a b2 a7
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant b2.
+
+108 unit hit on the Enterprise from Klingon at Sector f3
+
+
+Energy left 4803    shields down 100%,   torpedoes left 10
+COMMAND> shields up
+Shields raised.
+
+Enemy attack reduces shield strength to 97%,   torpedoes left 10
+COMMAND> torp
+10 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- f3
+
+Torpedo track- b6   c5   d5   
+e4   f3   
+***Klingon at Sector f3 destroyed.
+COMMAND> m a c5 a1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant c5.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a6."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a7."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant a8."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "The deep space probe has left the galaxy."
+COMMAND> m a d3 a10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant d3.
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a j10
+
+COMMAND> shields up
+Shields raised.
+COMMAND> m a e2 a10
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant e2.
+
+Enemy attack reduces shield strength to 94%,   torpedoes left 9
+COMMAND> torp
+9 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- e1
+
+Torpedo track- a9   b8   b7   
+c6   c5   c4   d3   d2   
+e1   
+***Klingon at Sector e1 destroyed.
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a a1
+
+COMMAND> m a j1
+
+COMMAND> shields up
+Shields raised.
+COMMAND> m a f2 a4
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f2.
+COMMAND> shields down
+Shields lowered.
+COMMAND> m a f2
+
+COMMAND> dock
+Docked.
+COMMAND> undock
+LEGAL COMMANDS ARE:
+SRSCAN       STATUS       REQUEST      LRSCAN       
+PHASERS      TORPEDO      PHOTONS      MOVE         SHIELDS      
+DOCK         DAMAGES      CHART        IMPULSE      REST         
+WARP         SENSORS      ORBIT        TRANSPORT    MINE         
+CRYSTALS     SHUTTLE      PLANETS      REPORT       COMPUTER     
+COMMANDS     EMEXIT       PROBE        SAVE         FREEZE       
+OPTIONS      ABANDON      DESTRUCT     DEATHRAY     CAPTURE      
+CLOAK        DEBUG        MAYDAY       SOS          CALL         
+QUIT         HELP         SCORE        CURSES                    
+
+COMMAND> m a j1
+
+COMMAND> m a h2 a1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant h2.
+COMMAND> shields up
+Shields raised.
+COMMAND> m a d4 j1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant d4.
+
+Enemy attack reduces shield strength to 81%,   torpedoes left 10
+COMMAND> torp
+10 torpedoes left.
+Number of torpedoes to fire- 1
+Target sector for torpedo number 1- i5
+
+Torpedo track- j2   j3   i4   
+i5   
+***Commander at Sector i5 damaged-- displaced by blast to Sector j6 
+*** Commander from Sector j6 retreats to Sector j7.
+
+Enemy attack reduces shield strength to 81%,   torpedoes left 9
+COMMAND> torp 1
+Target sector for torpedo number 1- j7
+
+Torpedo track- j2   j3   j4   
+j5   j6   j7   
+***Commander at Sector j7 destroyed.
+
+
+
+It is stardate 2713.9.
+
+You have smashed the Klingon invasion fleet and saved
+the Federation.
+
+In fact, you have done so well that Starfleet Command
+promotes you one step in rank from "Novice" to "Fair".
+
+LIVE LONG AND PROSPER.
+
+
+Your score --
+     2 ordinary Klingons destroyed           20
+     1 Klingon commanders destroyed          50
+  0.51 Klingons per stardate                256
+Bonus for winning Novice game               100
+
+TOTAL SCORE                                 426
+
+May the Great Bird of the Galaxy roost upon your home planet.

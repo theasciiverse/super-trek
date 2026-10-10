@@ -1,0 +1,7 @@
+# seed 1770000008
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests MAYDAY handles failure to find a valid landing sector.
+#
+mayday
+quit

@@ -1,0 +1,61 @@
+# seed 1770001034
+# arguments regular short expert 2026
+# SST2K version 2.9
+# Tests an ordinary Klingon retreat leaves commander locations unchanged.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3561.
+
+31 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in a1  c4  f6  b1  g4  
+
+The Enterprise is currently in Quadrant b4 Sector b5
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> shields transfer 1
+Shield energy maximized.
+Excess energy requested returned to ship energy
+*** Commander from Sector j9 advances to Sector h7.
+
+Enemy attack reduces shield strength to 86%,   torpedoes left 10
+COMMAND> score
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+
+TOTAL SCORE                                  -4
+COMMAND> report
+You were playing a short expert game.
+Your secret password is "aei"
+0 of 31 Klingons have been killed.
+The Super Commander has not been destroyed.
+There are 5 bases.
+No Starbase is currently under attack.
+You have 2 deep space probes.
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   * . . . . . . . . . 
+b     . . . E . * . . . 
+c   . . . . . . * . . . 
+d   . @ . .   . . . . . 
+e   . . . .   . . . . . 
+f   . . . . . . . . . . 
+g   . . . . . * * . . . 
+h   . . . . . . C . . . 
+i   . * . . . . . . . . 
+j   . . . . . . * . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

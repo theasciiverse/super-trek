@@ -1,0 +1,35 @@
+# seed 1
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests nonfinite numeric input is rejected without changing the ship or terminating play.
+#
+status
+move auto nan 1
+move auto 1 inf
+move auto -inf 1
+move auto 1e999 1
+move manual NaN 1
+move manual 1 -Infinity
+torpedo nan
+torpedo 1 nan 1
+warp nan
+warp -inf
+rest NaN
+rest +Infinity
+shields transfer nan
+0
+phasers automatic
+nan
+computer inf 1
+cancel
+computer 1 1
+nan
+0
+computer 1 1
+no
+inf
+0
+status
+move auto d9
+status
+quit

@@ -1,0 +1,10 @@
+# seed 1770000102
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a retreating commander moves without creating another commander.
+#
+phasers manual 0 200
+score
+report
+srscan
+quit

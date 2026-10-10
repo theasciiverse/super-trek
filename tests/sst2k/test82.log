@@ -1,0 +1,21 @@
+# seed 1
+# Tests winning citation eligibility, acceptance, refusal, and saved-game restrictions.
+# case difficulty elapsed alive thawed debug answer result
+#
+expert-fast expert 4 1 0 0 y printed
+emeritus-fast emeritus 4 1 0 0 y printed
+expert-killrate expert 6 1 0 0 y printed
+emeritus-killrate emeritus 6 1 0 0 y printed
+expert-refusal expert 4 1 0 0 n declined
+emeritus-refusal emeritus 4 1 0 0 n declined
+expert-saved expert 4 1 1 0 y blocked
+emeritus-saved emeritus 4 1 1 0 y blocked
+expert-debug-saved expert 4 1 1 1 y printed
+emeritus-debug-saved emeritus 4 1 1 1 y printed
+novice-win novice 4 1 0 0 y ineligible
+fair-win fair 4 1 0 0 y ineligible
+good-win good 4 1 0 0 y ineligible
+expert-slow expert 10 1 0 0 y ineligible
+emeritus-slow emeritus 10 1 0 0 y ineligible
+expert-dead expert 4 0 0 0 y ineligible
+emeritus-dead emeritus 4 0 0 0 y ineligible

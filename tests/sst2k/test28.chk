@@ -1,0 +1,52 @@
+# seed 14
+# arguments
+# SST2K version 2.8
+# Test death via block-hole collision (ChatGPT-5.2)
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? n
+Wayback setting (press enter for current year): 2023
+
+
+It is stardate 4499. The Federation is being attacked by
+a deadly Klingon invasion force. As captain of the United
+Starship U.S.S. Enterprise, it is your mission to seek out
+and destroy this invasion force of 4 battle cruisers.
+You have an initial allotment of 7 stardates to complete
+your mission.  As you proceed you may be given more time.
+
+You will have 3 supporting starbases.
+Starbase locations-  e6  h5  g4  
+
+The Enterprise is currently in Quadrant c8 Sector c5
+
+Good Luck!
+COMMAND> move manual 0.3 0.0
+
+Helmsman Sulu- "Aye, Sir."
+
+***RED ALERT!  RED ALERT!
+***Enterprise pulled into black hole at Sector c8
+
+
+It is stardate 4499.6.
+
+Your ship is drawn to the center of the black hole.
+You are crushed into extremely dense matter.
+The Federation will be destroyed.
+
+
+Your score --
+  0.00 Klingons per stardate                  0
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                -300
+Collision detected
+
+May the Great Bird of the Galaxy roost upon your home planet.

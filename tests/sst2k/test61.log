@@ -1,0 +1,15 @@
+# seed 1
+# arguments
+# SST2K version 2.9
+# Tests a timed game after Sandbox restores its deadline in the same process.
+#
+regular sandbox good 2026
+status
+report
+quit
+y
+regular short good 2026
+status
+report
+quit
+n

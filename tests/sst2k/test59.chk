@@ -1,0 +1,32 @@
+# seed 1
+# arguments regular short fair 2026
+# SST2K version 2.9
+# Tests Fair difficulty is accepted at startup and reported correctly.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2270.
+
+6 Klingons.
+An unknown number of Romulans.
+7 stardates.
+5 starbases in b7  f4  f7  e5  a2  
+
+The Enterprise is currently in Quadrant f5 Sector d10
+
+Good Luck!
+COMMAND> report
+You were playing a short fair game.
+Your secret password is "afi"
+0 of 6 Klingons have been killed.
+There are 5 bases.
+No Starbase is currently under attack.
+You have 2 deep space probes.
+
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

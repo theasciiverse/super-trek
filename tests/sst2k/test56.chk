@@ -1,0 +1,42 @@
+# seed 1770000066
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests damaged transport near a planet requires standard orbit before a shuttle offer.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2383.
+
+19 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in g2  a4  b7  f3  
+
+The Enterprise is currently in Quadrant b2 Sector a8
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> shields down
+Shields lowered.
+
+834 unit hit from Commander at a6
+
+***CRITICAL HIT--S. R. Sensors and Transporter damaged.
+
+Energy left 4165    shields down 100%,   torpedoes left 10
+COMMAND> damages
+DEVICE                             REPAIR TIMES
+                                   IN FLIGHT                DOCKED
+  S. R. Sensors             	    6.98		    1.74
+  Transporter               	   14.03		    3.50
+COMMAND> transport
+
+Enterprise not in standard orbit.
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,219 @@
+# seed 1556292107
+# arguments regular short good 2023
+# SST2K version 2.5
+# Test multiple critical hits ending in defeat by Supercommander
+# recorded by esr@snark.thyrsus.com on Fri Apr 26 11:21:47 2019
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2535.
+
+14 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+3 starbases in e1  f3  c5  
+
+The Enterprise is currently in Quadrant b2 Sector g3
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> torp 3 7 4 8 4 9 2
+
+Track for torpedo number 1-  g4   
+***Klingon at Sector g4 destroyed.
+
+Track for torpedo number 2-  h4   
+***Klingon at Sector h4 destroyed.
+
+Track for torpedo number 3-  h3   i2   
+***Klingon at Sector i2 destroyed.
+*** Commander from Sector d9 advances to Sector e8.
+
+44 unit hit from Commander at e8
+
+33 unit hit from Klingon at j8
+
+29 unit hit from Klingon at h10
+
+
+Energy left 4892    shields up 70%,   torpedoes left 7
+COMMAND> torp 3 6 6 8 10 10 8
+
+Track for torpedo number 1-  g4   f5   f6   
+***Klingon at Sector f6 destroyed.
+
+Track for torpedo number 2-  g4   g5   g6   
+g7   h8   h9   h10   
+***Klingon at Sector h10 destroyed.
+
+Track for torpedo number 3-  h4   h5   i6   
+j7   j8   
+***Klingon at Sector j8 destroyed.
+*** Commander from Sector e8 retreats to Sector e9.
+
+91 unit hit from Commander at e9
+
+
+Energy left 4801    shields up 63%,   torpedoes left 4
+COMMAND> p a
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Phasers locked on target. Energy available: 4601.47
+720 units required. Units to fire= 754
+
+Shields lowered.
+
+547 unit hit on Commander at Sector e9
+***Commander at Sector e9 destroyed.
+
+Shields raised.
+COMMAND> sh down
+Shields lowered.
+COMMAND> m a 7 7
+
+COMMAND> m a 1 7
+
+COMMAND> sh up
+Shields raised.
+COMMAND> m a 1 2 10 7
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant a2.
+
+206 unit hit from Commander at e5
+
+
+Energy left 3466    shields up 52%,   torpedoes left 4
+
+162 unit hit from Commander at e5
+
+
+Energy left 3303    shields up 46%,   torpedoes left 4
+COMMAND> torp 1 7 4
+
+Torpedo track- i6   h5   g4   
+
+***Black hole at Sector g4 swallows torpedo.
+*** Commander from Sector e5 retreats to Sector d5.
+
+138 unit hit from Commander at d5
+
+
+Energy left 3139    shields up 42%,   torpedoes left 3
+COMMAND> rep
+You were playing a short good game.
+Your secret password is "fgy"
+7 of 14 Klingons have been killed, including 1 Commander.
+The Super Commander has not been destroyed.
+There are 3 bases.
+No Starbase is currently under attack.
+You have 4 deep space probes.
+
+COMMAND> m a 5 2 1 1
+
+Ensign Chekov- "Course laid in, Captain."
+
+145 unit hit from Commander at d5
+
+
+Energy left 2994    shields up 39%,   torpedoes left 3
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   a planet in Quadrant g6 has been destroyed
+   by the Super-commander."
+Uhura- Captain, Medusa in Quadrant f2 reports it is under attack
+by a Klingon invasion fleet.
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   a planet in Quadrant h2 has been destroyed
+   by the Super-commander."
+COMMAND> sh down 
+Shields lowered.
+*** Commander from Sector d5 retreats to Sector f5.
+
+160 unit hit from Commander at f5
+
+
+Energy left 2046    shields down 39%,   torpedoes left 3
+COMMAND> m a 10 5
+
+
+Enterprise encounters Tholian web at j6;
+Emergency stop required 125 units of energy.
+Collision detected
+
+128 unit hit from Commander at f5
+
+
+Energy left 1793    shields down 39%,   torpedoes left 3
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 2537.73
+     Supernova in Quadrant e1; caution advised.
+
+[ANNOUNCEMENT ARRIVING...]
+
+***Enterprise caught in long range tractor beam--
+Enterprise is pulled to Quadrant h2, Sector e8
+Shields raised.
+
+735 unit hit from Super-commander at f7
+
+***CRITICAL HIT--Photon Tubes and Phasers damaged.
+
+Energy left 982    shields up 24%,   torpedoes left 3
+
+Mc Coy-  "Sickbay to bridge.  We suffered 8 casualties
+   in that last attack."
+COMMAND> sh up
+Shields already up.
+COMMAND> m a 6 2 1 5
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant f2.
+
+710 unit hit from Commander at b5
+
+***CRITICAL HIT--D. S. Probe and L. R. Sensors damaged.
+
+Energy left 272    shields up 17%,   torpedoes left 3
+
+Mc Coy-  "Sickbay to bridge.  We suffered 5 casualties
+   in that last attack."
+
+306 unit hit from Commander at b5
+
+***CRITICAL HIT--Shields damaged.
+***Shields knocked down.
+
+
+
+It is stardate 2537.7.
+
+The Enterprise has been destroyed in battle.
+
+Dulce et decorum est pro patria mori.
+The Federation will be destroyed.
+
+
+Your score --
+     6 ordinary Klingons destroyed           60
+     1 Klingon commanders destroyed          50
+  3.93 Klingons per stardate               1967
+    13 casualties incurred                  -13
+     1 ship(s) lost or destroyed           -100
+Penalty for getting yourself killed        -200
+
+TOTAL SCORE                                1761
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,118 @@
+# seed 1
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests nonfinite numeric input is rejected without changing the ship or terminating play.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2270.
+
+14 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in b7  f4  f7  e5  a2  
+
+The Enterprise is currently in Quadrant f5 Sector d10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> status
+Stardate      2270.8, Time Left 7.00
+Condition     GREEN, 0 DAMAGES
+Position      f5 , d10
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        5000.00
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 14
+Sector is uninhabited
+COMMAND> move auto nan 1
+
+Beg your pardon, Captain?
+COMMAND> move auto 1 inf
+
+Beg your pardon, Captain?
+COMMAND> move auto -inf 1
+
+Beg your pardon, Captain?
+COMMAND> move auto 1e999 1
+
+Beg your pardon, Captain?
+COMMAND> move manual NaN 1
+
+Beg your pardon, Captain?
+COMMAND> move manual 1 -Infinity
+
+Beg your pardon, Captain?
+COMMAND> torpedo nan
+
+Beg your pardon, Captain?
+COMMAND> torpedo 1 nan 1
+
+Beg your pardon, Captain?
+COMMAND> warp nan
+
+Beg your pardon, Captain?
+COMMAND> warp -inf
+
+Beg your pardon, Captain?
+COMMAND> rest NaN
+
+Beg your pardon, Captain?
+COMMAND> rest +Infinity
+
+Beg your pardon, Captain?
+COMMAND> shields transfer nan
+Energy to transfer to shields- 0
+COMMAND> phasers automatic
+
+Energy will be expended into space.
+0 units required. Units to fire= nan
+COMMAND> computer inf 1
+Destination quadrant and/or sector? cancel
+
+Beg your pardon, Captain?
+COMMAND> computer 1 1
+Time or arrival date? nan
+Warp factor? 0
+
+Beg your pardon, Captain?
+COMMAND> computer 1 1
+Time or arrival date? no
+Warp factor? inf
+Captain, certainly you can give me one of these.
+Time or arrival date? 0
+We'll never make it, sir.
+COMMAND> status
+Stardate      2270.8, Time Left 7.00
+Condition     GREEN, 0 DAMAGES
+Position      f5 , d10
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        5000.00
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 14
+Sector is uninhabited
+COMMAND> move auto d9
+
+COMMAND> status
+Stardate      2270.9, Time Left 6.96
+Condition     GREEN, 0 DAMAGES
+Position      f5 , d9
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        4987.50
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 14
+Sector is uninhabited
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,9 @@
+# seed 1770000001
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests damaged transport without a planet is refused without offering a shuttle.
+#
+shields down
+damages
+transport
+quit

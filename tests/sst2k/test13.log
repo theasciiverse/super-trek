@@ -1,0 +1,41 @@
+# seed 1771712007
+# arguments regular medium good
+# SST2K version 2.8
+# Test mining on non-dilithium planet, find space thingy 
+# recorded by esr@snark.thyrsus.com on Sat Feb 21 17:13:27 2026
+#
+
+chart
+m a d2 a1
+chart
+xx b4 j1
+chart
+m a b4 j 1
+chart
+m a c2 j3
+chart
+m a i5
+mine
+shuttle
+orbit
+mine
+shuttle
+mine
+m a h10
+shuttle
+m h 10
+m a h10
+m a a10
+torpedo
+3
+f10
+f8
+a9
+m a f10
+torp
+2
+f3
+f3
+chart
+quit
+n

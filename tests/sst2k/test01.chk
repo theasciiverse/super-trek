@@ -1,0 +1,43 @@
+# seed 1556084761
+# arguments
+# SST2K version 2.4
+# Test bringing game up, viewing galaxy, quitting
+# recorded by esr@snark.thyrsus.com on Wed Apr 24 01:46:01 2019
+#
+
+
+-SUPER- STAR TREK
+
+Would you like a regular, tournament, or saved game? r
+Would you like a Short, Medium, Long, or Sandbox game? s
+Are you a Novice, Fair, Good, Expert, or Emeritus player? g
+Wayback setting (press enter for current year): 2023
+
+
+Stardate 3188.
+
+15 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+4 starbases in b7  f6  c1  g4  
+
+The Enterprise is currently in Quadrant c5 Sector c10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ...  ...  ...  ...   |
+b | ...  ...  ...  ..8  ..3  ..3  .1.  ...   |
+c | .1.  ...  ...  ..8 <..3> ..4  ...  ...   |
+d | ...  ...  ...  ..8  ..9  ..6  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  .1.  ...  ...   |
+g | ...  ...  ...  .1.  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  ...  ...   |
+
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

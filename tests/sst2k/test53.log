@@ -1,0 +1,10 @@
+# seed 1770000462
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a Klingon with lost firepower can surrender using its remaining energy.
+#
+phasers manual 250
+capture
+report
+srscan
+quit

@@ -1,0 +1,9 @@
+Departure: no ghost, counts agree, condition green.
+Pursuit: one kill, no negative galaxy counts.
+Departure: no ghost, counts agree, condition red.
+Pursuit: one kill, no negative galaxy counts.
+Departure: no ghost, counts agree, condition docked.
+Pursuit: one kill, no negative galaxy counts.
+Stationary local move rejected without removing the Supercommander.
+Move into the Enterprise quadrant rejected without changing counts.
+Remote movement updates galaxy counts without changing local targets.

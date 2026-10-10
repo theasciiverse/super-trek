@@ -1,0 +1,11 @@
+# seed 8
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests leaving a planet quadrant prevents orbiting and shuttle use at its old sector.
+#
+sensors
+m a c8 d5
+sensors
+orbit
+shuttle
+quit

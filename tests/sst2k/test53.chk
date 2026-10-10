@@ -1,0 +1,68 @@
+# seed 1770000462
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a Klingon with lost firepower can surrender using its remaining energy.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 4697.
+
+15 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in d8  a7  
+
+The Enterprise is currently in Quadrant h3 Sector b9
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> phasers manual 250
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Energy available= 4799.99
+
+Shields lowered.
+
+198 unit hit on Klingon at Sector e4
+***Mr. Spock-  "Captain, the vessel at Sector e4
+   has just lost its firepower."
+
+Shields raised.
+
+Enemy attack reduces shield strength to 100%,   torpedoes left 10
+COMMAND> capture
+Klingon captain at e4 surrenders.
+67 Klingons commit suicide rather than be taken captive.
+133 captives taken
+***Klingon at Sector b9 destroyed.
+COMMAND> report
+You were playing a short good game.
+Your secret password is "aoq"
+1 of 15 Klingons have been killed.
+The Super Commander has not been destroyed.
+There are 2 bases.
+No Starbase is currently under attack.
+133 Klingons in brig.
+You have 4 deep space probes.
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   .   . . . . . . E . 
+c   . . . . . . . . . . 
+d   .   . . . . . . . . 
+e   . . . . . . . . . . 
+f   . . . . . . . . . . 
+g   . . . * . . * . . . 
+h   . * . . . . . * . . 
+i   . . . . . . . . . . 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

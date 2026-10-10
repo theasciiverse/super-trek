@@ -1,0 +1,9 @@
+# seed 751
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests ABANDON retries placement after exhausting its adjacent-sector attempts.
+#
+abandon
+status
+srscan
+quit

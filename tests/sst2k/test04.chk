@@ -1,0 +1,264 @@
+# seed 1556120044
+# arguments regular short good 2023
+# Test deep-space probes
+# recorded by esr@snark.thyrsus.com on Wed Apr 24 11:34:04 2019
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 5021.
+
+18 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in d2  h7  
+
+The Enterprise is currently in Quadrant b6 Sector g7
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ...   |
+b | ...  ...  ...  ...  ..4 <..5> ..4  ...   |
+c | ...  ...  ...  ...  ..2  ..4  ..7  ...   |
+d | ...  .1.  ...  ...  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> m a 1 10
+
+COMMAND> s hup
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . * . . . . . @ . E 
+b   . . . . . . .   . . 
+c   . . . .   . . . . . 
+d   . . . . . . . . . . 
+e   . . . . * . . . . . 
+f   . . . . . . . . . . 
+g   . . . . . . . . * . 
+h   . . . . *   . . . . 
+i   . * . . . . . . . . 
+j   . . . . . . . . . . 
+COMMAND> m a 2 7 1 1
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant b7.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ...  ...  ...  ...  ..4  ..5 <..4> ..2   |
+c | ...  ...  ...  ...  ..2  ..4  ..7  ..7   |
+d | ...  .1.  ...  ...  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> probe
+2 probes left
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- 2 1
+
+Ensign Chekov-  "The deep space probe is launched, Captain."
+COMMAND> sh up
+Shields raised.
+COMMAND> m 1 7 10 1
+(Manual movement assumed.)
+
+Helmsman Sulu- "Aye, Sir."
+
+YOU HAVE ATTEMPTED TO CROSS THE NEGATIVE ENERGY BARRIER
+AT THE EDGE OF THE GALAXY.  THE THIRD TIME YOU TRY THIS,
+YOU WILL BE DESTROYED.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b6."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b5."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b4."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b3."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b2."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant b1."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "The deep space probe has left the galaxy."
+
+[ANNOUNCEMENT ARRIVING...]
+Lt. Uhura-  "Captain, Starfleet Intelligence reports
+   a planet in Quadrant a3 has been destroyed
+   by the Super-commander."
+
+[ANNOUNCEMENT ARRIVING...]
+
+***Enterprise caught in long range tractor beam--
+Enterprise is pulled to Quadrant c3, Sector f8
+
+Enemy attack reduces shield strength to 85%,   torpedoes left 10
+COMMAND> m a 6 10
+
+
+52 unit hit from Commander at a8
+
+
+Energy left 3399    shields up 75%,   torpedoes left 10
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 5024.18
+     Supernova in Quadrant b6; caution advised.
+COMMAND> torp 2 1 8 1 8
+
+Track for torpedo number 1-  e10   d9   c9   
+b9   a8   
+***Commander at Sector a8 damaged-- displaced by blast to Sector j7 
+
+Track for torpedo number 2-  e10   d9   c9   
+b8   a8   
+Torpedo missed.
+COMMAND> torp 1 10 7
+
+Torpedo track- g9   h8   i7   
+j7   
+Torpedo missed.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ..4  ..9  ..3  ..5  ..4  ***  ..4  ..2   |
+c | ...  ..3 <..6> ..6  ..2  ..4  ..7  ..7   |
+d | ...  .15  106  ..1  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> m a 10 6
+
+COMMAND> torp 2 10 6
+
+Spock-  "Bridge to sickbay.  Dr. McCoy,
+  I recommend an immediate review of
+  the Captain's psychological profile."
+COMMAND> torp 2 10 7 10 7
+
+Track for torpedo number 1-  j7   j8   j9   
+j10   
+Torpedo missed.
+
+Track for torpedo number 2-  j7   j8   j9   
+j10   
+Torpedo missed.
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ..4  ..9  ..3  ..5  104  ***  ..4  ..2   |
+c | ...  ..3 <..6> ..6  ..2  ..4  ..7  ..7   |
+d | ...  .15  106  ..1  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> probe
+1 probe left.
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- 7 10
+
+Beg your pardon, Captain?
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ..4  ..9  ..3  ..5  104  ***  ..4  ..2   |
+c | ...  ..3 <..6> ..6  ..2  ..4  ..7  ..7   |
+d | ...  .15  106  ..1  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> probe
+1 probe left.
+Are you sure you want to fire a probe? y
+Arm NOVAMAX warhead? n
+Manual or automatic- a
+Target quadrant or quadrant&sector- 7 8
+
+Ensign Chekov-  "The deep space probe is launched, Captain."
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ..4  ..9  ..3  ..5  104  ***  ..4  ..2   |
+c | ...  ..3 <..6> ..6  ..2  ..4  ..7  ..7   |
+d | ...  .15  106  ..1  ...  ...  ...  ...   |
+e | ...  ...  ...  ...  ...  ...  ...  ...   |
+f | ...  ...  ...  ...  ...  ...  ...  ...   |
+g | ...  ...  ...  ...  ...  ...  ...  ...   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> m a 5 3 5 5
+
+Ensign Chekov- "Course laid in, Captain."
+
+Entering Quadrant e3.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant d3."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant d4."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e5."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Message from Starfleet Command       Stardate 5024.61
+     Supernova in Quadrant c8; caution advised.
+
+Lt. Uhura-  "The deep space probe is now in Quadrant e6."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant f6."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant f7."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant g7."
+
+Lt. Uhura-  "The deep space probe is now in Quadrant g8."
+
+[ANNOUNCEMENT ARRIVING...]
+
+Lt. Uhura-  "The deep space probe has left the galaxy."
+COMMAND> chart
+       STAR CHART FOR THE KNOWN GALAXY
+      1    2    3    4    5    6    7    8
+a | ...  ...  ...  ...  ..8  ..5  106  ..5   |
+b | ..4  ..9  ..3  ..5  104  ***  ..4  ..2   |
+c | ...  ..3  ..6  ..6  ..2  ..4  ..7  ***   |
+d | ...  .15  106  ..1  ...  ...  ...  ...   |
+e | ...  ..1 <..6> ..7  ..8  405  ...  ...   |
+f | ...  ..8  ..2  ..5  ...  ..9  ..4  ...   |
+g | ...  ...  ...  ...  ...  ...  ..4  ..3   |
+h | ...  ...  ...  ...  ...  ...  .1.  ...   |
+
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

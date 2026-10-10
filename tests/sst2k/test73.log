@@ -1,0 +1,10 @@
+# seed 1
+# Tests remote supernovae destroy quadrants despite radio damage without revealing unreceived reports.
+#
+radio-damaged
+radio-working
+unexplored-base
+docked
+sensor-discovery
+quadrant-entry
+induced

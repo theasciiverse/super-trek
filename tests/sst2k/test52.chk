@@ -1,0 +1,50 @@
+# seed 1770000462
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests a strong armed Klingon refuses when the draw exceeds its surrender chance.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 4697.
+
+15 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+2 starbases in d8  a7  
+
+The Enterprise is currently in Quadrant h3 Sector b9
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> capture
+Fat chance, captain!
+COMMAND> report
+You were playing a short good game.
+Your secret password is "aoq"
+0 of 15 Klingons have been killed.
+The Super Commander has not been destroyed.
+There are 2 bases.
+No Starbase is currently under attack.
+You have 4 deep space probes.
+
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   .   . . . . . . E . 
+c   . . . . . . . . . . 
+d   .   . . . . . . . . 
+e   . . . K . . . . . . 
+f   . . . . . . . . . . 
+g   . . . * . . * . . . 
+h   . * . . . . . * . . 
+i   . . . . . . . . . . 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

@@ -1,0 +1,67 @@
+
+
+File or device name for your plaque: # seed 1
+# arguments
+# SST2K version 2.9
+# Tests complete Expert and Emeritus plaques with even and odd captain name lengths.
+#
+expert.txt
+Enter name to go on plaque (up to 30 characters): James Kirk
+
+--- expert.txt ---
+
+
+
+                                                       U. S. S. ENTERPRISE
+
+
+
+
+                                  For demonstrating outstanding ability as a starship captain
+
+                                                Starfleet Command bestows to you
+
+                                 James Kirk
+
+                                                           the rank of
+
+                                                       "Commodore Emeritus"
+
+                                                           Expert level
+
+                                                 This day of Sep  5 2026, 12:34:56
+
+                                                        Your score:  1234
+
+                                                    Klingons per stardate:  12.34
+
+
+File or device name for your plaque: emeritus.txt
+Enter name to go on plaque (up to 30 characters): James T. Kirk
+
+--- emeritus.txt ---
+
+
+
+                                                       U. S. S. ENTERPRISE
+
+
+
+
+                                  For demonstrating outstanding ability as a starship captain
+
+                                                Starfleet Command bestows to you
+
+                                James T. Kirk
+
+                                                           the rank of
+
+                                                       "Commodore Emeritus"
+
+                                                          Emeritus level
+
+                                                 This day of Sep  5 2026, 12:34:56
+
+                                                        Your score:  1234
+
+                                                    Klingons per stardate:  12.34

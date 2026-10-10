@@ -1,0 +1,123 @@
+# seed 1
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests REQUEST names, shortest abbreviations, prompts, and invalid input in a live game.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 2270.
+
+14 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+5 starbases in b7  f4  f7  e5  a2  
+
+The Enterprise is currently in Quadrant f5 Sector d10
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> status
+Stardate      2270.8, Time Left 7.00
+Condition     GREEN, 0 DAMAGES
+Position      f5 , d10
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        5000.00
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 14
+Sector is uninhabited
+COMMAND> request date
+Stardate      2270.8
+COMMAND> request condition
+Condition     GREEN, 0 DAMAGES
+COMMAND> request position
+Position      f5 , d10
+COMMAND> request lsupport
+Life Support  ACTIVE
+COMMAND> request warpfactor
+Warp Factor   5.0
+COMMAND> request energy
+Energy        5000.00
+COMMAND> request torpedoes
+Torpedoes     10
+COMMAND> request shields
+Shields       DOWN, 100% 2500.0 units
+COMMAND> request klingons
+Klingons Left 14
+COMMAND> request time
+Time Left     7.00
+COMMAND> request bases
+Bases Left    5
+COMMAND> req d
+Stardate      2270.8
+COMMAND> req c
+Condition     GREEN, 0 DAMAGES
+COMMAND> req p
+Position      f5 , d10
+COMMAND> req l
+Life Support  ACTIVE
+COMMAND> req w
+Warp Factor   5.0
+COMMAND> req e
+Energy        5000.00
+COMMAND> req t
+Torpedoes     10
+COMMAND> req s
+Shields       DOWN, 100% 2500.0 units
+COMMAND> req k
+Klingons Left 14
+COMMAND> req ti
+Time Left     7.00
+COMMAND> req ba
+Bases Left    5
+COMMAND> ReQ TiMe
+Time Left     7.00
+COMMAND> request
+Information desired? energy
+Energy        5000.00
+COMMAND> req b
+UNRECOGNIZED REQUEST. Legal requests are:
+  date, condition, position, lsupport, warpfactor,
+  energy, torpedoes, shields, klingons, time, bases.
+COMMAND> req system
+UNRECOGNIZED REQUEST. Legal requests are:
+  date, condition, position, lsupport, warpfactor,
+  energy, torpedoes, shields, klingons, time, bases.
+COMMAND> req datejunk
+UNRECOGNIZED REQUEST. Legal requests are:
+  date, condition, position, lsupport, warpfactor,
+  energy, torpedoes, shields, klingons, time, bases.
+COMMAND> req 1
+UNRECOGNIZED REQUEST. Legal requests are:
+  date, condition, position, lsupport, warpfactor,
+  energy, torpedoes, shields, klingons, time, bases.
+COMMAND> req ti
+Time Left     7.00
+COMMAND> status
+Stardate      2270.8, Time Left 7.00
+Condition     GREEN, 0 DAMAGES
+Position      f5 , d10
+Life Support  ACTIVE
+Warp Factor   5.0
+Energy        5000.00
+Torpedoes     10
+Shields       DOWN, 100% 2500.0 units
+Klingons Left 14
+Sector is uninhabited
+COMMAND> r 0.01
+6 stardates left.
+COMMAND> req ti
+Time Left     6.99
+COMMAND> re 0.01
+6 stardates left.
+COMMAND> req ti
+Time Left     6.98
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.

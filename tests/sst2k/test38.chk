@@ -1,0 +1,56 @@
+# seed 1770000092
+# arguments regular short good 2026
+# SST2K version 2.9
+# Tests phaser hits stay with their targets after an earlier target is destroyed.
+#
+
+
+-SUPER- STAR TREK
+
+
+
+Stardate 3740.
+
+18 Klingons.
+An unknown number of Romulans.
+And one (GULP) Super-Commander.
+7 stardates.
+3 starbases in e8  f7  c6  
+
+The Enterprise is currently in Quadrant d1 Sector i8
+
+Good Luck!
+  YOU'LL NEED IT.
+COMMAND> phasers manual 1000 1 1000
+
+Weapons Officer Sulu-  "High-speed shield control enabled, sir."
+Energy available= 4799.99
+
+Shields lowered.
+
+870 unit hit on Klingon at Sector f7
+***Klingon at Sector f7 destroyed.
+0 unit hit on Klingon at Sector d8
+535 unit hit on Klingon at Sector a6
+***Klingon at Sector a6 destroyed.
+
+Shields raised.
+Weapons officer Sulu-  "Phasers overheated, sir."
+
+Enemy attack reduces shield strength to 95%,   torpedoes left 10
+COMMAND> srscan
+     Short-range scan
+    1 2 3 4 5 6 7 8 9 10
+a   . . . . . . . . . . 
+b   . . . * . . . . . . 
+c   . . . . .   . . . . 
+d   . . . . . . . K . . 
+e   . . . . . . . . . . 
+f   . . . . . . . . . . 
+g   . . . * . . . . * . 
+h   . . . . . . . * . . 
+i   . .   . . . . E . . 
+j   . . . . . . . . . . 
+COMMAND> quit
+
+May the Great Bird of the Galaxy roost upon your home planet.
