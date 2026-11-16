@@ -21,6 +21,7 @@ mod scanner;
 mod setup;
 mod sst;
 mod state;
+mod ui;
 
 use consts::*;
 use sst::{Sst, SystemExit};
@@ -93,7 +94,17 @@ fn exit_with(sst: &mut Sst, code: i32) -> ! {
 
 fn main() {
     env_logger::Builder::from_env(env_logger::Env::default().default_filter_or("off")).format_timestamp_millis().init();
-    let argv: Vec<String> = std::env::args().skip(1).collect();
+    let mut argv: Vec<String> = std::env::args().skip(1).collect();
+    // `--tty` (this port's own switch) keeps the plain line mode
+    let mut line_mode = false;
+    argv.retain(|a| {
+        if a == "--tty" {
+            line_mode = true;
+            false
+        } else {
+            true
+        }
+    });
     let mut sst = Sst::new();
     sst.io.rng_trace = std::env::var_os("SUPER_TREK_RNG_TRACE").is_some();
     sst.set_options((OPTION_ALL & !OPTION_IOMODES) | OPTION_TTY);
@@ -159,6 +170,7 @@ fn main() {
                 sst.io.replay = Some(reader);
                 sst.io.replay_started = true;
                 sst.io.replay_open = true;
+                line_mode = true;
                 let o = (sst.game.options | OPTION_TTY) & !OPTION_CURSES;
                 sst.set_options(o);
             }
@@ -173,6 +185,7 @@ fn main() {
                 }
             },
             't' => {
+                line_mode = true;
                 let o = (sst.game.options | OPTION_TTY) & !OPTION_CURSES;
                 sst.set_options(o);
             }
@@ -209,6 +222,15 @@ fn main() {
     {
         sst.io.rows = r;
     }
+    if !line_mode && std::io::stdin().is_terminal() && std::io::stdout().is_terminal() {
+        let (cols, rows) = ratatui::crossterm::terminal::size().unwrap_or((0, 0));
+        if cols >= 80 && rows >= 24 {
+            log::info!(target: "start", "interface mode {cols}x{rows}");
+            let code = ui::run(sst, play);
+            std::process::exit(code);
+        }
+        sst.prout("Terminal is not wide enough for fullscreen.");
+    }
     let result = std::panic::catch_unwind(std::panic::AssertUnwindSafe(|| play(&mut sst)));
     match result {
         Ok(()) => exit_with(&mut sst, 0),
@@ -224,7 +246,7 @@ fn main() {
 
 /// `os.get_terminal_size()` on stdout (called only when stdout is a terminal).
 fn terminal_rows() -> Option<i64> {
-    crossterm::terminal::size().ok().map(|(_, rows)| rows as i64)
+    ratatui::crossterm::terminal::size().ok().map(|(_, rows)| rows as i64)
 }
 
 /// The play-again loop of SST2K's main program.
