@@ -21,6 +21,7 @@ pub fn letterize(n: i64) -> char {
 }
 
 #[derive(Clone, Copy, PartialEq, Eq, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Coord {
     pub i: i64,
     pub j: i64,
@@ -110,6 +111,7 @@ impl std::fmt::Display for Coord {
 
 /// A Coord holding floats (course positions and deltas).
 #[derive(Clone, Copy, PartialEq, Debug, Default, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Vec2 {
     pub i: f64,
     pub j: f64,
