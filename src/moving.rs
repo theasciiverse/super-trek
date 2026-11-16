@@ -133,10 +133,22 @@ impl Sst {
             }
             if icourse.final_.i >= GALSIZE * QUADSIZE {
                 icourse.final_.i = (GALSIZE * QUADSIZE * 2) - icourse.final_.i;
+                // DEVIATION: a course ending exactly on the far edge (80)
+                // reflects onto itself and SST2K loops forever here; step
+                // it one sector inside instead.
+                if icourse.final_.i == GALSIZE * QUADSIZE {
+                    icourse.final_.i = GALSIZE * QUADSIZE - 1;
+                }
                 kink = true;
             }
             if icourse.final_.j >= GALSIZE * QUADSIZE {
                 icourse.final_.j = (GALSIZE * QUADSIZE * 2) - icourse.final_.j;
+                // DEVIATION: a course ending exactly on the far edge (80)
+                // reflects onto itself and SST2K loops forever here; step
+                // it one sector inside instead.
+                if icourse.final_.j == GALSIZE * QUADSIZE {
+                    icourse.final_.j = GALSIZE * QUADSIZE - 1;
+                }
                 kink = true;
             }
             if kink {
