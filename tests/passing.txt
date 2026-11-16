@@ -10,3 +10,7 @@ test61
 test63
 test40
 test67
+test17
+test52
+test57
+test78
