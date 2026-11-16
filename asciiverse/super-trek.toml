@@ -2,7 +2,7 @@ schema_version = 1
 id = "super-trek"
 kind = "game"
 title = "Super Trek"
-description = "The 1970s Super Star Trek of UT Austin, Tom Almy and ESR's SST2K: hunt a Klingon invasion across an eight by eight galaxy by warp, phaser and photon torpedo, one typed order at a time, against the clock."
+description = "The great 1970s Trek game of UT Austin, Tom Almy and ESR's SST2K, on a bridge screen: hunt a Klingon invasion across an eight by eight galaxy by warp, phaser and photon torpedo, one typed order at a time, against the clock."
 year = 1974
 old = true
 license = "BSD-3-Clause AND LicenseRef-Super-Star-Trek"
@@ -35,10 +35,13 @@ utf8 = true
 color = "truecolor"
 mouse = false
 
-# 100x30, to be recorded with the finished build
+# 100x30, asciiverse/record-preview.sh (seed 136, 42 s): phaser volleys
+# and a torpedo spread clear the first quadrant, then a warp into a
+# Commander's ambush; the still is the ambush, Commander on the scan,
+# critical hits in the log
 [media]
 cast = "asciiverse/super-trek.cast"
-thumbnail_at = 10.0
+thumbnail_at = 30.0
 
 [release]
 source = "github"
