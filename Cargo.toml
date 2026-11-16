@@ -1,6 +1,6 @@
 [package]
 name = "super-trek"
-version = "0.2.0"
+version = "0.5.0"
 edition = "2024"
 rust-version = "1.88"
 description = "Super Trek: the 1970s Super Star Trek, ported from ESR's SST2K for the Asciiverse catalog"
