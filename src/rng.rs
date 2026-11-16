@@ -23,9 +23,10 @@ pub fn step(x: &mut f64) -> f64 {
 
 impl Sst {
     pub fn rnd_random(&mut self) -> f64 {
+        let old = self.game.lcg_x;
         let v = step(&mut self.game.lcg_x);
         if self.io.rng_trace {
-            log::trace!(target: "rng", "{v}");
+            eprintln!("RNG {}", crate::py::float_repr(old));
         }
         v
     }
