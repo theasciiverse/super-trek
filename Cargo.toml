@@ -1,9 +1,9 @@
 [package]
 name = "super-trek"
-version = "0.1.0"
+version = "0.2.0"
 edition = "2024"
 rust-version = "1.88"
-description = "Super Star Trek, the 1970s classic, ported from ESR's SST2K for the Asciiverse catalog"
+description = "Super Trek: the 1970s Super Star Trek, ported from ESR's SST2K for the Asciiverse catalog"
 license-file = "NOTICE"
 publish = false
 
@@ -12,3 +12,11 @@ name = "super-trek"
 path = "src/main.rs"
 
 [dependencies]
+log = "0.4"
+env_logger = { version = "0.11", default-features = false, features = ["auto-color", "humantime"] }
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+crossterm = "0.29"
+
+[profile.release]
+opt-level = 3

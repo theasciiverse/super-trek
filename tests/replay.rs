@@ -2,13 +2,15 @@
 //! compares the output with SST2K's own, byte for byte.
 //!
 //! - testNN.log + testNN.chk: run `super-trek -r testNN.log`.
-//! - testNN.tst that runs the game with flags: run the script with the port
+//! - testNN.tst that runs the game (with flags, or from a small Python
+//!   driver that starts it as a subprocess): run the script with the port
 //!   in place of `../sst`.
-//! - testNN.tst that is a Python unit test of SST2K internals: not runnable
-//!   here; those are ported as Rust unit tests next to the code they test.
+//! - testNN.tst that loads SST2K's internals into Python (`exec(compile`):
+//!   not runnable here; those are ported as Rust unit tests.
 //!
-//! It is a ratchet: every game listed in tests/passing.txt must match, and the
-//! rest are reported, so progress is locked in as the translation advances.
+//! It is a ratchet: every game listed in tests/passing.txt must match, and
+//! the rest are reported, so progress is locked in as the translation
+//! advances. SUPER_TREK_REPLAY=testNN runs just that one and prints a diff.
 
 use std::path::{Path, PathBuf};
 use std::process::Command;
@@ -22,7 +24,7 @@ fn dir() -> PathBuf {
 enum Case {
     Log(String),
     Script(String),
-    Python(String),
+    Unit(String),
 }
 
 fn cases() -> Vec<Case> {
@@ -36,24 +38,48 @@ fn cases() -> Vec<Case> {
         .into_iter()
         .map(|n| match std::fs::read_to_string(dir().join(format!("{n}.tst"))) {
             Err(_) => Case::Log(n),
-            Ok(s) if s.contains("<<'PY'") || s.contains("import ") => Case::Python(n),
+            Ok(s) if s.contains("exec(compile") => Case::Unit(n),
             Ok(_) => Case::Script(n),
         })
         .collect()
 }
 
+fn cache_dir() -> PathBuf {
+    let d = std::env::temp_dir().join(format!("super-trek-test-cache-{}", std::process::id()));
+    let _ = std::fs::create_dir_all(&d);
+    d
+}
+
 fn run(case: &Case) -> Option<(String, Vec<u8>)> {
+    let cache = cache_dir();
     let out = match case {
-        Case::Log(n) => Command::new(BIN).current_dir(dir()).args(["-r", &format!("{n}.log")]).output().ok()?,
+        Case::Log(n) => Command::new(BIN)
+            .current_dir(dir())
+            .env("SUPER_TREK_FAST", "1")
+            .env("XDG_CACHE_HOME", &cache)
+            .args(["-r", &format!("{n}.log")])
+            .output()
+            .ok()?,
         Case::Script(n) => {
             let script = std::fs::read_to_string(dir().join(format!("{n}.tst"))).ok()?;
-            let script = script.replace("python3 -u ../sst", BIN).replace("python3 ../sst", BIN).replace("../sst", BIN);
-            Command::new("sh").current_dir(dir()).args(["-c", &script]).output().ok()?
+            let bin = format!("'{BIN}'");
+            let script = script
+                .replace("sys.executable, '-u', '../sst'", &bin)
+                .replace("'../sst'", &bin)
+                .replace("python3 -u ../sst", BIN)
+                .replace("python3 ../sst", BIN);
+            Command::new("sh")
+                .current_dir(dir())
+                .env("SUPER_TREK_FAST", "1")
+                .env("XDG_CACHE_HOME", &cache)
+                .args(["-c", &script])
+                .output()
+                .ok()?
         }
-        Case::Python(_) => return None,
+        Case::Unit(_) => return None,
     };
     let name = match case {
-        Case::Log(n) | Case::Script(n) | Case::Python(n) => n.clone(),
+        Case::Log(n) | Case::Script(n) | Case::Unit(n) => n.clone(),
     };
     let mut bytes = out.stdout;
     if matches!(case, Case::Log(_)) {
@@ -72,21 +98,40 @@ fn recorded_games() {
         .filter(|l| !l.is_empty() && !l.starts_with('#'))
         .map(String::from)
         .collect();
-    let (mut ok, mut total, mut python, mut regressions) = (Vec::new(), 0, 0, Vec::new());
+    let only = std::env::var("SUPER_TREK_REPLAY").ok();
+    let (mut ok, mut failing, mut total, mut units, mut regressions) = (Vec::new(), Vec::new(), 0, 0, Vec::new());
     for case in cases() {
+        if let Some(o) = &only {
+            let n = match &case {
+                Case::Log(n) | Case::Script(n) | Case::Unit(n) => n,
+            };
+            if n != o {
+                continue;
+            }
+        }
         let Some((name, got)) = run(&case) else {
-            python += 1;
+            units += 1;
             continue;
         };
         total += 1;
         let want = std::fs::read(dir().join(format!("{name}.chk"))).unwrap();
         if got == want {
             ok.push(name);
-        } else if passing.contains(&name) {
-            regressions.push(name);
+        } else {
+            if only.is_some() {
+                let p = std::env::temp_dir().join(format!("{name}.got"));
+                std::fs::write(&p, &got).unwrap();
+                println!("output written to {}", p.display());
+            }
+            if passing.contains(&name) {
+                regressions.push(name.clone());
+            }
+            failing.push(name);
         }
     }
-    println!("{} of {total} replayable recorded games match ({python} Python unit tests ported separately)", ok.len());
+    let _ = std::fs::remove_dir_all(cache_dir());
+    println!("{} of {total} replayable recorded games match ({units} Python unit tests ported separately)", ok.len());
+    println!("failing: {failing:?}");
     let new: Vec<_> = ok.iter().filter(|n| !passing.contains(n)).collect();
     if !new.is_empty() {
         println!("newly matching, add to tests/passing.txt: {new:?}");

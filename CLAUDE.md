@@ -79,3 +79,36 @@ Order of work:
   the install folder.
 - Release builds by the same GitHub workflow as Greed
   (`../greed/.github/workflows/release.yml`).
+
+## Port conventions (how the Rust maps the Python)
+
+One `Sst` struct (`src/sst.rs`) owns what the Python keeps in globals:
+`game` (Gamestate, including the RNG state `lcg_x`), `thing`, `scanner`
+and `io`. Every Python top-level function is a method on it, in the module
+PLAN.md's table names, keeping its name (`consumeTime` is `consume_time`,
+`listCommands` is `list_commands`).
+
+- Output: `self.prout(&s)`, `self.proutn(&s)`, `self.skip(n)`,
+  `self.prouts(&s)`. Python `%` formatting is `pf!("fmt", args...)` with
+  the format string copied verbatim (gettext's `_()` dropped). A Coord
+  argument prints as Python's `str()`; a float with `%s` prints Python's
+  float repr ("5.0").
+- Numbers: Python ints are `i64`, floats `f64`; keep each value's Python
+  type. `int(x)` is `trunc(x)`, `round(x)` is `pyround(x)` (ties to even),
+  every `**` and `math.pow` is `pypow` (never `powi`, `*` or `mul_add`),
+  `//` and `%` on negatives use `div_euclid`/`rem_euclid` or
+  `pyfloordiv`/`pymod`.
+- RNG: `rnd_real()`, `rnd_real1(n)`, `rnd_real2(lo, hi)`,
+  `rnd_integer(n)`, `rnd_integer2(lo, hi)`, `withprob(p)`, called in
+  exactly the Python's order, short-circuits included.
+- Coordinates: `Coord` (integers; `Coord::none()` is Python's None and
+  `Coord()`), `Vec2` (floats, course arithmetic). `Course` is `course`.
+- Enemies: a grow-only arena `game.pool`, the live list `game.enemies` of
+  ids, `game.tholian` an id. `Enemy(...)` is `new_enemy`, `enemy.move(loc)`
+  is `enemy_move`. Loops over `game.enemies` that can remove entries are
+  index loops that reproduce Python's skip-the-next-element behaviour.
+- Planets: indices into `game.state.planets` (`Quadrant.planet`,
+  `game.iplnet`).
+- `TrekError` is a `Result`; `SystemExit` unwinds to `main` with
+  `resume_unwind(Box::new(SystemExit(code)))`.
+- Python crash paths are fixed and marked `// DEVIATION:` (listed below).
