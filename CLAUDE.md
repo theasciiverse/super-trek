@@ -6,11 +6,13 @@ game's rules, text and behaviour are kept exactly; the port adds a native
 binary on every platform and a Ratatui interface around the classic typed
 commands.
 
-Status (2026-11-16): the whole game is translated and plays, version
-0.5.0. All 69 of SST2K's recorded games that run the program replay byte
-for byte (debug and release), and the differential fuzzer
-(`tools/fuzz.py`) finds no difference in about 2,300 random games. The
-Ratatui bridge is in. See "State of the port" below for what remains.
+Status (2026-11-16): version 1.0.0, everything in PLAN.md is in. The
+whole game is translated and plays; all 69 of SST2K's recorded games that
+run the program replay byte for byte (debug and release), the 14 that
+test SST2K's internals are ported as Rust unit tests, the differential
+fuzzer (`tools/fuzz.py`) found no difference in 2,341 random games, and
+the Ratatui bridge is in. Not yet: the 100x30 preview cast, and a person
+playing it through. Not tagged; David decides when it ships.
 
 ## Lineage
 
