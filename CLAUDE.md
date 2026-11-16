@@ -6,8 +6,11 @@ game's rules, text and behaviour are kept exactly; the port adds a native
 binary on every platform and a Ratatui interface around the classic typed
 commands.
 
-Status: started 2026-10-10. Design, credits, random generator and test
-harness first; the game itself is translated after that.
+Status (2026-11-16): the whole game is translated and plays, version
+0.5.0. All 69 of SST2K's recorded games that run the program replay byte
+for byte (debug and release), and the differential fuzzer
+(`tools/fuzz.py`) finds no difference in about 2,300 random games. The
+Ratatui bridge is in. See "State of the port" below for what remains.
 
 ## Lineage
 
@@ -112,3 +115,58 @@ PLAN.md's table names, keeping its name (`consumeTime` is `consume_time`,
 - `TrekError` is a `Result`; `SystemExit` unwinds to `main` with
   `resume_unwind(Box::new(SystemExit(code)))`.
 - Python crash paths are fixed and marked `// DEVIATION:` (listed below).
+
+## Decisions (2026-11-16)
+
+Taken for PLAN.md section 10, each a conservative choice, David may
+overrule:
+
+1. **Exact on Linux, near-exact elsewhere**: no port of glibc's maths;
+   macOS and Windows may differ in rare last-bit cases. Conservative
+   choice, David may overrule.
+2. **Python crash paths are fixed**, each marked `// DEVIATION:` in the
+   source and listed in PATCHES.md with the game that shows it.
+   Conservative choice, David may overrule.
+3. **Known SST2K bugs are kept verbatim** (PLAN 4.15: "were playing", the
+   dead DEBUG command, BSDTREK on the PLANETS bit, the Tholian internal
+   error, `hold` at a1, the trailing blank cell in the command list).
+   Conservative choice, David may overrule.
+4. **UI: a line-mode core with a Ratatui shell** (PLAN 9). The game runs
+   with SST2K's teletype semantics on its own thread; the bridge draws
+   short-range scan, status, long-range scan and (40 rows or more) the star
+   chart from a copy taken at each prompt, reading only what the ship
+   knows, so a game played there replays exactly. `--tty`, `-t`, `-r`, or
+   input/output that is not a terminal give the plain line mode.
+   Conservative choice, David may overrule.
+5. **Saves: own versioned JSON** in `$XDG_STATE_HOME/super-trek` (else
+   `~/.local/state/super-trek`), `.trk` names and SST2K's messages kept.
+   Conservative choice, David may overrule.
+6. **Help: `sst.doc` generated once** with upstream's own xmlto and
+   makehelp.py pipeline (`tools/make-sst-doc.sh`) and embedded
+   (`assets/sst.doc`). Conservative choice, David may overrule.
+7. **Wayback quirks kept verbatim**. Conservative choice, David may
+   overrule.
+
+## Deviations
+
+Every difference from SST2K 2.10 is in `PATCHES.md`: the crash and hang
+paths fixed (decision 2), saves, input log, help, screen and command line.
+New ones go there and get a `// DEVIATION:` comment.
+
+## Testing
+
+- `cargo test` (and `cargo test --release`; PLAN 4.8 needs both): unit
+  tests and the replay ratchet (`tests/replay.rs`, `tests/passing.txt`).
+  `SUPER_TREK_REPLAY=test07 cargo test --test replay -- --nocapture` runs
+  one game and writes its output for a diff.
+- `tools/rngdiff.sh testNN`: SST2K's and the port's random-number call
+  order side by side; the first difference names the diverging module.
+- `tools/fuzz.py --games 500 --jobs 12`: random games through both; any
+  differing game is kept as a ready replay log.
+- Build, tests and recordings under
+  `systemd-run --user --scope -p MemoryMax=4G`, `-j4`.
+- `RUST_LOG=debug super-trek 2>log` logs every input line and key, each
+  command, condition changes, quadrant entries and a state line at every
+  prompt.
+- `SUPER_TREK_FAST=1` turns off the slow typing of `prouts` (tests);
+  `SUPER_TREK_YEAR` and `SUPER_TREK_DATE` fix the clock.
