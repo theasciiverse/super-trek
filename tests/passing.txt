@@ -8,3 +8,5 @@ test59
 test60
 test61
 test63
+test40
+test67
