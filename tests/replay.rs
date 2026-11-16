@@ -38,7 +38,7 @@ fn cases() -> Vec<Case> {
         .into_iter()
         .map(|n| match std::fs::read_to_string(dir().join(format!("{n}.tst"))) {
             Err(_) => Case::Log(n),
-            Ok(s) if s.contains("exec(compile") => Case::Unit(n),
+            Ok(s) if s.contains("exec(") => Case::Unit(n),
             Ok(_) => Case::Script(n),
         })
         .collect()

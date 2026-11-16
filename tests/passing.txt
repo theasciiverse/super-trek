@@ -1,1 +1,10 @@
 # Recorded SST2K games the port reproduces exactly; tests/replay.rs keeps them passing.
+test01
+test12
+test22
+test50
+test58
+test59
+test60
+test61
+test63
