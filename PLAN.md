@@ -153,9 +153,10 @@ closed file stays truthy.
 
 - 59 plain replays + 6 flag-running scripts + 3 subprocess Python tests
   (63, 78, 80) = **68 compared through the binary**.
-- 15 Python unit tests ported as Rust unit tests beside their code (plaque,
-  super-commander, setup per skill, tryexit, base attacks, supernova, play
-  again, options, request, citations, saves).
+- 14 Python unit tests ported as Rust unit tests (plaque, super-commander,
+  setup per skill, tryexit, base attacks, supernova, play again, options,
+  request, citations, saves): test62 in finish.rs, test83 in save.rs, the
+  rest in src/unit_tests.rs, each compared with its .chk.
 - Uncovered by any recording (needs review and newly recorded games):
   impulse, time warp, engine damage above warp 6, supernova escape, Tholian
   web completion, a commander destroying a base, enslavement and

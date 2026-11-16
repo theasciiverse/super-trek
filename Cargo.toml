@@ -15,7 +15,8 @@ path = "src/main.rs"
 log = "0.4"
 env_logger = { version = "0.11", default-features = false, features = ["auto-color", "humantime"] }
 serde = { version = "1", features = ["derive"] }
-serde_json = "1"
+# float_roundtrip: a thawed game must hold the exact floats it saved
+serde_json = { version = "1", features = ["float_roundtrip"] }
 ratatui = "0.30"
 
 [profile.release]

@@ -22,6 +22,8 @@ mod setup;
 mod sst;
 mod state;
 mod ui;
+#[cfg(test)]
+mod unit_tests;
 
 use consts::*;
 use sst::{Sst, SystemExit};

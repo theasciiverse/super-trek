@@ -231,6 +231,36 @@ fn decode_game(data: &[u8]) -> Result<Gamestate, String> {
             }
         }
     }
+    // `restore_game_records`: fields added since the first saves may be
+    // missing (sandbox and wayback_disabled of the game, pending_remove of
+    // an enemy, supernova of a chart page), and the misspelt `statekscmdr`
+    // older releases wrote is dropped; any other unknown or missing field
+    // is refused, as SST2K refuses it ("Invalid fields for ...").
+    let mut legacy_pages: Vec<(&str, usize, usize)> = Vec::new();
+    if let Some(fields) = g.as_object_mut() {
+        fields.remove("statekscmdr");
+        fields.entry("sandbox").or_insert(Value::Bool(false));
+        fields.entry("wayback_disabled").or_insert(Value::from(0));
+    }
+    if let Some(pool) = g.get_mut("pool").and_then(Value::as_array_mut) {
+        for e in pool.iter_mut().filter_map(Value::as_object_mut) {
+            e.entry("pending_remove").or_insert(Value::Bool(false));
+        }
+    }
+    for snapshot in ["state", "snapsht"] {
+        if let Some(chart) = g.get_mut(snapshot).and_then(|s| s.get_mut("chart")).and_then(Value::as_array_mut) {
+            for (i, row) in chart.iter_mut().enumerate() {
+                for (j, page) in row.as_array_mut().into_iter().flatten().enumerate() {
+                    if let Some(page) = page.as_object_mut()
+                        && !page.contains_key("supernova")
+                    {
+                        page.insert("supernova".into(), Value::Bool(false));
+                        legacy_pages.push((snapshot, i, j));
+                    }
+                }
+            }
+        }
+    }
     let mut game: Gamestate = serde_json::from_value(g).map_err(|e| e.to_string())?;
     for (k, f) in pool_nans {
         let e = &mut game.pool[k];
@@ -244,6 +274,12 @@ fn decode_game(data: &[u8]) -> Result<Gamestate, String> {
         game.future[k].date = f64::NAN;
     }
     validate_game(&game)?;
+    // `load_game`: migrate older saves only after their structure has been
+    // checked; a chart page without the flag knows what the galaxy knows.
+    for (snapshot, i, j) in legacy_pages {
+        let snapshot = if snapshot == "state" { &mut game.state } else { &mut game.snapsht };
+        snapshot.chart[i][j].supernova = snapshot.galaxy[i][j].supernova;
+    }
     Ok(game)
 }
 
@@ -499,5 +535,241 @@ mod tests {
         if let Some(d) = save_dir() {
             assert_eq!(save_path("emsave.trk", false), d.join("emsave.trk"));
         }
+    }
+
+    /// The pickles test83 sends at the loader: a function call (print, eval)
+    /// and a constructor call for each protocol 0 to 5, as SST2K's test
+    /// makes them with `pickle.dumps(Payload(...), protocol=N)`.
+    const PICKLE_PAYLOADS: [&[u8]; 18] = [
+        b"c__builtin__\x0aprint\x0ap0\x0a(VSST_PICKLE_EXECUTED\x0ap1\x0atp2\x0aRp3\x0a.",
+        b"c__builtin__\x0aeval\x0ap0\x0a(Vprint('SST_PICKLE_EXECUTED')\x0ap1\x0atp2\x0aRp3\x0a.",
+        b"csst_restricted_save_test\x0aEnemy\x0ap0\x0a(tRp1\x0a.",
+        b"c__builtin__\x0aprint\x0aq\x00(X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x01tq\x02Rq\x03.",
+        b"c__builtin__\x0aeval\x0aq\x00(X\x1c\x00\x00\x00print('SST_PICKLE_EXECUTED')q\x01tq\x02Rq\x03.",
+        b"csst_restricted_save_test\x0aEnemy\x0aq\x00)Rq\x01.",
+        b"\x80\x02c__builtin__\x0aprint\x0aq\x00X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x01\x85q\x02Rq\x03.",
+        b"\x80\x02c__builtin__\x0aeval\x0aq\x00X\x1c\x00\x00\x00print('SST_PICKLE_EXECUTED')q\x01\x85q\x02Rq\x03.",
+        b"\x80\x02csst_restricted_save_test\x0aEnemy\x0aq\x00)Rq\x01.",
+        b"\x80\x03cbuiltins\x0aprint\x0aq\x00X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x01\x85q\x02Rq\x03.",
+        b"\x80\x03cbuiltins\x0aeval\x0aq\x00X\x1c\x00\x00\x00print('SST_PICKLE_EXECUTED')q\x01\x85q\x02Rq\x03.",
+        b"\x80\x03csst_restricted_save_test\x0aEnemy\x0aq\x00)Rq\x01.",
+        b"\x80\x04\x950\x00\x00\x00\x00\x00\x00\x00\x8c\x08builtins\x94\x8c\x05print\x94\x93\x94\x8c\x13SST_PICKLE_EXECUTED\x94\x85\x94R\x94.",
+        b"\x80\x04\x958\x00\x00\x00\x00\x00\x00\x00\x8c\x08builtins\x94\x8c\x04eval\x94\x93\x94\x8c\x1cprint('SST_PICKLE_EXECUTED')\x94\x85\x94R\x94.",
+        b"\x80\x04\x95)\x00\x00\x00\x00\x00\x00\x00\x8c\x18sst_restricted_save_test\x94\x8c\x05Enemy\x94\x93\x94)R\x94.",
+        b"\x80\x05\x950\x00\x00\x00\x00\x00\x00\x00\x8c\x08builtins\x94\x8c\x05print\x94\x93\x94\x8c\x13SST_PICKLE_EXECUTED\x94\x85\x94R\x94.",
+        b"\x80\x05\x958\x00\x00\x00\x00\x00\x00\x00\x8c\x08builtins\x94\x8c\x04eval\x94\x93\x94\x8c\x1cprint('SST_PICKLE_EXECUTED')\x94\x85\x94R\x94.",
+        b"\x80\x05\x95)\x00\x00\x00\x00\x00\x00\x00\x8c\x18sst_restricted_save_test\x94\x8c\x05Enemy\x94\x93\x94)R\x94.",
+    ];
+
+    /// The same print call through copyreg extension codes 42, 300, 70000.
+    const PICKLE_EXTENSIONS: [&[u8]; 3] = [
+        b"\x80\x02\x82*X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x00\x85q\x01Rq\x02.",
+        b"\x80\x02\x83,\x01X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x00\x85q\x01Rq\x02.",
+        b"\x80\x02\x84p\x11\x01\x00X\x13\x00\x00\x00SST_PICKLE_EXECUTEDq\x00\x85q\x01Rq\x02.",
+    ];
+
+    /// The game as `same_state` sees it: everything reachable, as JSON.
+    fn state_of(g: &Gamestate) -> Value {
+        serde_json::to_value(compact_pool(g)).unwrap()
+    }
+
+    /// tests/sst2k/test83.tst: restricted saves, legacy saves, shared
+    /// objects, and rejection without state changes.
+    ///
+    /// SST2K saves pickles and this port saves its own JSON format (module
+    /// doc), so the pickle specifics port as their observable meaning:
+    /// - "Protocol N": the port has one format. Each line runs the same
+    ///   round trip once more; shared identities are indices here (the
+    ///   Tholian is the last live enemy, `iplnet` is planet 0, the time-warp
+    ///   snapshot has its own planet list).
+    /// - legacy pickles become JSON with the same fields left out.
+    /// - pickle payloads (function calls, constructor calls, imports,
+    ///   BUILD, copyreg extensions, persistent IDs, memo and frame abuse)
+    ///   are fed to the loader byte for byte and must be refused like any
+    ///   other bad file; nothing in a JSON loader can run them. The direct
+    ///   `GameUnpickler(...).load()` check and the "class attributes
+    ///   unchanged" check have no counterpart.
+    /// - bad fields are made in the JSON: NaN is null (what serde writes for
+    ///   it), infinity is `1e999`, 2**100 is that integer.
+    /// - a cycle has no JSON form; the Python's cyclic pickle is sent.
+    #[test]
+    fn restricted_save_matches_test83() {
+        use crate::unit_tests::{new_sst, read, scratch, seed, set_replay, take};
+        let log = read("test83.log");
+        let protocols: Vec<String> =
+            log.lines().filter(|l| !l.is_empty() && !l.starts_with('#')).map(String::from).collect();
+        let fresh = |sd: i64, skill: &str, year: &str| {
+            let (mut s, buf) = new_sst();
+            s.set_options(OPTION_ALL & !OPTION_CURSES);
+            seed(&mut s, sd);
+            s.scanner.inqueue = vec!["regular".into(), "short".into(), skill.into(), year.into()];
+            set_replay(&mut s, Some("captain\n"));
+            s.setup();
+            (s, buf)
+        };
+        let mut out = String::new();
+
+        let (mut s, buf) = fresh(1, "good", "2026");
+        s.game.probe = Some(s.course(1.0, 2.0));
+        let loc = s.dropin(None);
+        let th = s.new_enemy('T', Some(loc), 100.0);
+        s.game.tholian = Some(th);
+        s.game.iplnet = Some(0);
+        s.game.snapsht = s.game.state.clone();
+        s.game.state.snap = true;
+        let original = encode_game(&s.game);
+        for protocol in &protocols {
+            let loaded = decode_game(&encode_game(&s.game)).expect("valid save");
+            assert_eq!(state_of(&s.game), serde_json::to_value(&loaded).unwrap());
+            assert_eq!(loaded.tholian, loaded.enemies.last().copied());
+            assert_eq!(loaded.iplnet, Some(0));
+            assert_eq!(loaded.snapsht.planets.len(), loaded.state.planets.len());
+            assert!(loaded.probe.is_some());
+            assert_eq!(encode_game(&s.game), original);
+            out += &format!("Protocol {protocol}: complete state, shared identities, snapshot, enemy, and probe restored.\n");
+        }
+
+        let mut legacy: Value = serde_json::from_slice(&original).unwrap();
+        {
+            let g = &mut legacy["game"];
+            let fields = g.as_object_mut().unwrap();
+            fields.remove("sandbox").unwrap();
+            fields.remove("wayback_disabled").unwrap();
+            fields.insert("statekscmdr".into(), serde_json::to_value(Coord::none()).unwrap());
+            let tholian = g["tholian"].as_u64().unwrap() as usize;
+            g["pool"][tholian].as_object_mut().unwrap().remove("pending_remove").unwrap();
+            g["state"]["galaxy"][0][0]["supernova"] = Value::Bool(true);
+            for snapshot in ["state", "snapsht"] {
+                for row in g[snapshot]["chart"].as_array_mut().unwrap() {
+                    for page in row.as_array_mut().unwrap() {
+                        page.as_object_mut().unwrap().remove("supernova").unwrap();
+                    }
+                }
+            }
+        }
+        let loaded = decode_game(&serde_json::to_vec(&legacy).unwrap()).expect("legacy save");
+        assert!(!loaded.sandbox && loaded.wayback_disabled == 0);
+        assert!(!loaded.pool[loaded.tholian.unwrap()].pending_remove);
+        assert!(loaded.state.chart[0][0].supernova);
+        assert!(!loaded.snapsht.chart[0][0].supernova);
+        out += "Legacy fields migrate after validation, including independent snapshot charts.\n";
+
+        for skill in ["novice", "fair", "good", "expert", "emeritus"] {
+            for year in ["1973", "2026"] {
+                for sd in 1..6 {
+                    let (s, _) = fresh(sd, skill, year);
+                    let loaded = decode_game(&encode_game(&s.game)).expect("valid save");
+                    assert_eq!(state_of(&s.game), serde_json::to_value(&loaded).unwrap());
+                }
+            }
+        }
+        out += "50 games spanning all difficulties and old/modern Wayback settings round-trip.\n";
+
+        drop((s, buf));
+        let (mut s, buf) = fresh(1, "good", "2026");
+        let original = encode_game(&s.game);
+        let dir = scratch("test83");
+        let filename = dir.join("game.trk");
+        let typed = filename.to_string_lossy().into_owned();
+        let mut rejected = 0;
+        let mut reject = |s: &mut Sst, data: &[u8]| {
+            std::fs::write(&filename, data).unwrap();
+            s.scanner.inqueue = vec![typed.clone()];
+            take(&buf);
+            assert!(s.thaw(), "Hostile save accepted");
+            let output = take(&buf);
+            assert!(output.contains("invalid or unsafe saved game"), "{output}");
+            assert!(!output.contains("SST_PICKLE_EXECUTED"));
+            assert!(encode_game(&s.game) == original);
+            rejected += 1;
+        };
+
+        for payloads in PICKLE_PAYLOADS.chunks(3) {
+            for data in payloads {
+                reject(&mut s, data);
+            }
+        }
+        // No module imports or dotted attribute lookup may be requested by a pickle.
+        reject(&mut s, b"csubprocess\nPopen\n.");
+        reject(&mut s, b"c__main__\nGamestate.__init__\n.");
+        // BUILD must not modify a shared loader function or a game class.
+        reject(&mut s, b"ccopy_reg\n_reconstructor\n}Vpoison\nI1\nsb.");
+        reject(&mut s, b"c__main__\nGamestate\n}Vpoison\nI1\nsb.");
+        for data in PICKLE_EXTENSIONS {
+            reject(&mut s, data);
+        }
+        out += "Function payloads, constructor side effects, imports, and cached extensions blocked.\n";
+
+        let doc: Value = serde_json::from_slice(&original).unwrap();
+        let changed = |change: &dyn Fn(&mut Value)| {
+            let mut v = doc.clone();
+            change(&mut v["game"]);
+            serde_json::to_string(&v).unwrap()
+        };
+        let changes: Vec<String> = vec![
+            changed(&|g| g["state"] = Value::Null),
+            changed(&|g| g["damage"] = serde_json::json!(vec!["bad"; NDEVICES])),
+            changed(&|g| {
+                g["future"].as_array_mut().unwrap().pop();
+            }),
+            changed(&|g| {
+                g["state"]["galaxy"].as_array_mut().unwrap().pop();
+            }),
+            changed(&|g| g["quadrant"]["i"] = (-1).into()),
+            changed(&|g| g["sector"]["j"] = 10.into()),
+            changed(&|g| g["state"]["galaxy"][0][0]["planet"] = "bad".into()),
+            changed(&|g| g["energy"] = Value::Null),
+            changed(&|g| g["energy"] = "INFINITY".into()).replace("\"INFINITY\"", "1e999"),
+            changed(&|g| g["torps"] = "HUGE".into()).replace("\"HUGE\"", "1267650600228229401496703205376"),
+            changed(&|g| g["warp"] = "shadow a method".into()),
+            changed(&|g| g["__setstate__"] = "shadow a hook".into()),
+            changed(&|g| {
+                g.as_object_mut().unwrap().remove("energy");
+            }),
+        ];
+        for data in &changes {
+            reject(&mut s, data.as_bytes());
+        }
+        out += "Wrong field types, dimensions, coordinates, nonfinite values, and injected fields rejected.\n";
+
+        let deep = "[".repeat(111) + &"]".repeat(111);
+        let mut opcodes = b"N0".repeat(100_000);
+        opcodes.extend_from_slice(b"N.");
+        let mut frame = b"\x80\x04\x95".to_vec();
+        frame.extend_from_slice(&(1u64 << 40).to_le_bytes());
+        frame.extend_from_slice(b"N.");
+        let mut truncated = original.clone();
+        truncated.truncate(original.len() - 2);
+        let mut trailing = original.clone();
+        trailing.extend_from_slice(b"junk");
+        let inputs: Vec<Vec<u8>> = vec![
+            b"null".to_vec(),
+            b"\x80\x05\x95\x06\x00\x00\x00\x00\x00\x00\x00]\x94h\x00a.".to_vec(),
+            deep.into_bytes(),
+            b"".to_vec(),
+            b"not a pickle".to_vec(),
+            truncated,
+            trailing,
+            vec![b'x'; SAVE_MAX_BYTES as usize + 1],
+            opcodes,
+            b"\x80\x02]r\xff\xff\xff\xff.".to_vec(),
+            frame,
+            b"Pexternal\n.".to_vec(),
+            b"\x80\x02NQ.".to_vec(),
+        ];
+        for data in &inputs {
+            reject(&mut s, data);
+        }
+        out += "Cyclic, truncated, oversized, trailing, persistent-ID, and allocation-abuse inputs rejected.\n";
+        out += &format!("{rejected} rejected saves leave the active game and password unchanged.\n");
+
+        std::fs::write(&filename, &original).unwrap();
+        let before = state_of(&s.game);
+        s.scanner.inqueue = vec![typed.clone()];
+        assert!(!s.thaw());
+        assert_eq!(before, serde_json::to_value(&s.game).unwrap());
+        out += "A valid save loads successfully after rejected inputs.\n";
+        let _ = std::fs::remove_dir_all(&dir);
+        assert_eq!(out, read("test83.chk"));
     }
 }

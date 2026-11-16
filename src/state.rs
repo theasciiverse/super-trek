@@ -15,6 +15,7 @@ use crate::coord::{Coord, Vec2};
 use serde::{Deserialize, Serialize};
 
 #[derive(Clone, Debug, Default, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Thingy {
     pub location: Coord,
 }
@@ -26,6 +27,7 @@ impl Thingy {
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Planet {
     pub name: Option<String>,
     pub quadrant: Coord,
@@ -58,6 +60,7 @@ impl Planet {
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Quadrant {
     pub stars: i64,
     /// index into `Snapshot.planets`
@@ -88,6 +91,7 @@ impl Default for Quadrant {
 
 /// One cell of the star chart.
 #[derive(Clone, Debug, Default, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Page {
     pub stars: Option<i64>,
     pub starbase: bool,
@@ -96,6 +100,7 @@ pub struct Page {
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Snapshot {
     pub snap: bool,
     pub crew: i64,
@@ -160,6 +165,7 @@ impl Snapshot {
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Event {
     /// NaN stands for Python's None (before the first setup).
     pub date: f64,
@@ -176,6 +182,7 @@ impl Default for Event {
 pub type EnemyId = usize;
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Enemy {
     /// 'K', 'C', 'S', 'R', 'T', '?'
     pub etype: char,
@@ -199,6 +206,7 @@ pub struct EnemyMove {
 
 /// `course` (4680-4727). Positions are absolute (quadrant*10 + sector).
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Course {
     pub distance: f64,
     pub bearing: f64,
@@ -261,6 +269,7 @@ impl Course {
 }
 
 #[derive(Clone, Debug, Serialize, Deserialize)]
+#[serde(deny_unknown_fields)]
 pub struct Gamestate {
     pub options: i64,
     pub wayback_disabled: i64,
